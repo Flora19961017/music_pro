@@ -1,0 +1,42 @@
+/* 左边包含top（歌词）和bottom评论的宽 */
+.left{
+    width:709px;
+    margin:0 auto;
+    padding: 47px 30px 40px 39px;
+
+}
+.left_top_img{
+    width:198px;height:198px;
+}
+/* 设置图片父元素相对定位 */
+.u_cover{
+    position: relative;
+}
+/* 背景精灵图 */
+.bg_img{
+    display: inline-block;
+    position: absolute;
+    top:-38px;
+    left:-38px;
+    width:206px;height: 205px;
+    background: url(../images/coverall.png) no-repeat -140px -580px;
+}
+/* 生成外部链接样式 */
+.out{
+    font-size:12px;
+    color: #333;
+    margin:45px 0 0 12px;
+}
+/* 音乐符精灵图样式 */
+.u-icn{
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    width:16px;height:16px;
+    background: url(../images/icon.png) no-repeat -34px -863px;
+}
+/* 歌词主体样式*/
+.songs{
+    width:414px;
+    min-height: 419px;
+}
