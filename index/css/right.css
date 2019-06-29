@@ -1,7 +1,7 @@
 *{margin:0;padding:0;}
 /*�Ҳ����ȫ�����*/
 .right-aside{
-    width:250px;
+    width:235px;
     height:920px;
     float: right;
     border: 1px;
@@ -171,6 +171,8 @@
     bottom: 10px;
 }
 .a-right_aside:hover{background-position: -325px -47px;}
+
+
 
 
 
