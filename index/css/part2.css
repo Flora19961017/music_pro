@@ -1,0 +1,145 @@
+/*设置主体页面包含右侧边宽度*/
+section{
+    width:980px;
+    margin: 0 auto;
+}
+/*设置主要页面，除右侧边栏*/
+#main_part{
+    width:689px;
+    border: 1px solid #eee;
+    padding:20px;
+
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+ul,p{
+    padding: 0px;
+    margin: 0px;
+}
+.hot_nav{
+    height: 33px;
+    border-bottom: 2px solid #C10D0C;
+    line-height: 33px;
+    padding-right: 10px;
+}
+/*设置小红圈*/
+.red_circle{
+    float: left;
+    width: 32px;
+    height: 33px;
+    background: url("../images/index/index.png") no-repeat -225px -153px;
+}
+.hot_title{
+    float: left;
+    margin-right: 20px;
+    font-size: 20px;
+}
+#hot ul.hot_ul{
+    float: left;
+    font-size: 12px;
+    color: #333;
+}
+/*清除li的浮动*/
+#hot ul:after{
+    content:"";
+    display: block;
+    clear:both;
+}
+#hot ul li{
+    float:left;
+    list-style: none;
+}
+/*设置热门推荐“|”*/
+.line + .line::before{
+    content:"|";
+    margin: 0px 10px;
+}
+.hot_ul a:hover,.hot_more a:hover{
+    text-decoration: underline;
+}
+.hot_more{
+    float: right;
+    font-size: 12px;
+}
+.hot_arrow{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+    vertical-align: middle;
+    background: url("../images/index/index.png") no-repeat 0px -242px;
+}
+/*设置热点主体每个图片部分内容*/
+.hot_main{
+    padding: 20px 0px;
+}
+#hot >.hot_main>li{
+    width:140px;
+    height: 204px;
+    float: left;
+    padding-left: 42px;
+    padding-bottom: 30px;
+    position: relative;
+}
+#hot >.hot_main>li.hot_first_li{
+    padding-left: 0px;
+}
+#hot >.hot_main>li>a>img{
+    border: 1px solid #eee;
+}
+/*设置热点主体中文字部分*/
+.hot_main p a{
+    font-size: 14px;
+    line-height: 20px;
+}
+.hot_main p a:hover{
+    text-decoration: underline;
+}
+.hot_main p:before{
+    content: "";
+    display: table;
+}
+/*设置热点主体电台节目*/
+.hot_main .hot_diantai{
+    display: inline-block;
+    width: 42px;
+    height: 18px;
+    background: url("../images/index/icon.png") no-repeat -30px -655px;
+    margin-top: 2px;
+}
+/*设置图片上的灰色部分*/
+.hot_li_bottom{
+    height: 27px;
+    width: 140px;
+    background: url("../images/index/coverall.png") no-repeat 0 -537px;
+    position: absolute;
+    top:114px;
+    left: 43px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #ccc;
+    padding:9px 5px;
+    box-sizing: border-box;
+}
+#hot >.hot_main>li.hot_first_li .hot_li_bottom,#hot >.hot_main>li.hot_first_li .hot_li_bottom{
+    left: 1px;
+}
+/*设置图片上灰色部分的耳机*/
+.hot_earphone{
+    display: inline-block;
+    width: 14px;
+    height: 11px;
+    background: url("../images/index/iconall.png") no-repeat 0 -23px;
+    margin-right: 5px;
+}
+/*设置图片上灰色播放键*/
+.hot_play{
+    position: absolute;
+    right: 10px;
+    bottom: 4px;
+    width: 16px;
+    height: 17px;
+    background: url("../images/index/iconall.png") no-repeat 0 0px;
+}
