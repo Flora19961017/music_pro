@@ -1,0 +1,148 @@
+p,h3{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 12px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{text-decoration: none}
+/* 清除浮动 */
+.clear_both::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* 设置整体的宽度和边框 */
+.playlist_detail{
+    width: 980px;
+    border: 1px solid #d3d3d3;
+    margin: 0 auto;
+}
+/* 左侧信息 */
+.pd_m_info{
+    padding: 47px 30px 40px 39px;
+}
+/* 左侧信息图片 */
+.pd_info_pic{
+    float: left;
+    border: 1px solid #eee;
+    padding: 2px 2px 0 2px;
+}
+/* 左侧信息内容 */
+.pd_info_right{
+    float:left;
+    width: 410px;
+    margin-left: 20px;
+    font-size: 10px;
+    color:#777;
+}
+/* 左侧内容标题 */
+.pd_info_right h3:first-child{
+    margin-bottom: 12px;
+}
+/* 左侧信息内容标题的歌单图片 */
+.pd_info_right h3:first-child i{
+    display: inline-block;
+    width: 54px;
+    height: 24px;
+    background: url(../images/icon.png) 0 -243px;
+}
+.pd_info_right h3:first-child span{
+    display: inline-block;
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: normal;
+    padding-left: 60px;
+    margin-top: -24px;
+}
+/* 左侧内容第二行 */
+.pd_info_2{
+    display: flex;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+.pd_info_2 a:first-child{
+    height: 40px;
+    margin-right: 5px;
+}
+.pd_info_2 a:nth-child(2){
+    color:#0c73c2;
+    margin-bottom: 0px;
+}
+.pd_info_2 a:hover{
+    text-decoration: underline;
+}
+/* 网易云音乐旁的V */
+.pd_info_2 i{
+    width: 11px;
+    height: 13px;
+    background: url(../images/icon.png) 0px -1px;
+    margin-top: 11px;
+    margin-right: 10px;
+}
+/* 创建时间 */
+.pd_info_2 span{
+    color: #999;
+}
+/* 左侧内容第三行按钮 */
+.pd_but_box{
+    display: flex;
+    margin-bottom: 25px;
+}
+.pd_but_box a{
+    line-height: 31px;
+    height: 31px;
+}
+.pd_but_box .but_play{
+    width: 60px;
+    background: url(../images/button2.png) 0 -633px;
+    padding-left: 33px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 13px;
+}
+.pd_but_box .but_add{
+    width: 31px;
+    background: url(../images/button2.png) 0 -1588px;
+    margin-right: 5px;
+}
+.pd_but_box .but_file,.pd_but_box .but_share,.pd_but_box .but_down,.pd_but_box .but_commt{
+    min-width: 23px;
+    padding: 0px 0px 0px 36px;
+}
+.pd_but_box .but_file{
+    background: url(../images/button2.png) 0 -977px;
+}
+/* 设置精灵图所缺的右边 */
+.but_file+b,.but_share+b,.but_down+b,.but_commt+b{
+    display: inline-block;
+    height: 31px;
+    padding-right: 5px;
+    background: url(../images/button2.png) right -1020px;
+    margin-right: 5px;
+}
+.pd_but_box .but_share{background: url(../images/button2.png) 0 -1225px;}
+.pd_but_box .but_down{background: url(../images/button2.png) 0 -2761px;}
+.pd_but_box .but_commt{background: url(../images/button2.png) 0 -1465px;}
+/* 设置标签 */
+.pd_info_mark{
+    display: flex;
+    line-height: 22px;
+    margin-bottom: 5px;
+}
+.pd_info_mark a{
+    height: 22px;
+    background: url(../images/button2.png) 0 0;
+    padding-left: 10px;
+    color:#777;
+    font-size: 8px;
+}
+.pd_info_mark a+b{
+    height: 22px;
+    padding-right: 10px;
+    background: url(../images/button2.png) right -27px;
+    margin-right: 10px;
+}
+
