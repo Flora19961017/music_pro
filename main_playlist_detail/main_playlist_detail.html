@@ -1,52 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Document</title>
-		<link rel="stylesheet" href="css/normalize_zh.css">
-		<link rel="stylesheet" href="css/main_playlist_detail.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize_zh.css">
+    <link rel="stylesheet" href="css/main_playlist_detail.css">
 </head>
+
 <body>
-	<div class="playlist_detail">
-		<!-- 页面左侧详情 -->
-		<div class="pd_left">
-			<div class="pd_m_info clear_both">
-				<!-- 信息左侧图片 -->
-				<a class="pd_info_pic" href=""><img src="images/109951164178963099.jpg" alt=""></a>
-				<!-- 信息右侧 -->
-				<div class="pd_info_right">
-					<!-- 标题 -->
-					<h3><i></i><span>试问谁又不想拥有这些歌里甜甜的恋爱呢？</span></h3>
-					<!-- 第二行 -->
-					<div class="pd_info_2">
-						<a href=""><img src="images/logo.jpg" alt=""></a>
-						<a href="">网易云音乐<br></a>
-						<i></i>
-						<span>2019-06-28 创建</span>
-					</div>
-					<!-- 按钮 -->
-					<div class="pd_but_box">
-						<a class="but_play" href="">播放</a><a class="but_add" href=""></a>
-						<a class="but_file" href="">(872)</a><b></b>
-						<a class="but_share" href="">(3)</a><b></b>
-						<a class="but_down" href="">下载</a><b></b>
-						<a class="but_commt" href="">(31)</a><b></b>
-					</div>
-					<p class="pd_info_mark">标签：<a href="">浪漫</a><b></b>
-						<a href="">清新</a><b></b>
-					</p>
-					<p>介绍：为什么我听的歌这么甜，还是没有拥有甜甜的恋爱呢？
-						<p>本期歌单就要为你唱情歌！精选40首甜丝丝的歌曲，让你拥有一整天甜甜蜜蜜的好心情～</p>
-					</p>
-				</div>
-			</div>
-			<div class="pd_song_list"></div>
-			<div class="pd_m_commt"></div>
-		</div>
-		<!-- 页面右侧推荐 -->
-		<div class="pd_right"></div>
-	</div>
+    <div class="playlist_detail">
+        <!-- 页面左侧详情 -->
+        <div class="pd_left">
+            <!-- 信息部分 -->
+            <div class="pd_m_info clear_both">
+                <!-- 信息左侧图片 -->
+                <a class="pd_info_pic" href=""><img src="images/109951164178963099.jpg" alt=""></a>
+                <!-- 信息右侧 -->
+                <div class="pd_info_right">
+                    <!-- 标题 -->
+                    <h3><i></i><span>试问谁又不想拥有这些歌里甜甜的恋爱呢？</span></h3>
+                    <!-- 第二行 -->
+                    <div class="pd_info_2">
+                        <a href=""><img src="images/logo.jpg" alt=""></a>
+                        <a href="">网易云音乐<br></a>
+                        <i></i>
+                        <span>2019-06-28 创建</span>
+                    </div>
+                    <!-- 按钮 -->
+                    <div class="pd_but_box">
+                        <a class="but_play" href="">播放</a>
+                        <a class="but_add" href=""></a>
+                        <a class="but_file" href="">(872)</a><b></b>
+                        <a class="but_share" href="">(3)</a><b></b>
+                        <a class="but_down" href="">下载</a><b></b>
+                        <a class="but_commt" href="">(31)</a><b></b>
+                    </div>
+                    <p class="pd_info_mark">标签：<a href="">浪漫</a><b></b>
+                        <a href="">清新</a><b></b>
+                    </p>
+                    <p>介绍：为什么我听的歌这么甜，还是没有拥有甜甜的恋爱呢？
+                        <p>本期歌单就要为你唱情歌！精选40首甜丝丝的歌曲，让你拥有一整天甜甜蜜蜜的好心情～</p>
+                    </p>
+                </div>
+            </div>
+            <!-- 歌单部分 -->
+            <div class="pd_song_list">
+                <!-- 歌单标题部分 -->
+                <div class="title_box clear_both">
+                    <div>
+                        <h3>歌单列表</h3>
+                        <span>10首歌</span>
+                    </div>
+                    <div>
+                        <span>
+											<a class="dis_table" href=""><span class="msc_pic"></span>生成外部链接</a>
+                        </span>
+                        <span>
+											播放：<i class="title_red">684200</i>次
+										</span>
+                    </div>
+                </div>
+                <!-- 歌单内容部分 -->
+                <div class="mic_list_box">
+                    <table class="mic_table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th><span>歌曲标题</span></th>
+                                <th><span>时长</span></th>
+                                <th><span>歌手</span></th>
+                                <th><span>专辑</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 开始 -->
+                            <tr>
+                                <td>
+                                    <div>
+                                        <span>1</span>
+                                        <a class="tab_play" href=""></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="td_2">
+																			<a href="">我的歌声里</a>
+																			<b class="tab_muc_detail">-(原唱：曲婉婷(国语))</b>
+																			<span class=""></span>
+                                    </span>
+                                </td>
+                                <td class="tab_time_box">
+                                    <span class="tab_time">03:46</span>
+                                    <div class="tab_but_box1">
+                                        <a class="tab_add" href=""></a>
+                                        <a class="tab_like" href=""></a>
+                                        <a class="tab_share" href=""></a>
+                                        <a class="tab_down" href=""></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="">张智霖</a>
+                                </td>
+                                <td>
+                                    <a href="">DE&nbsp;JA&nbsp;VU&nbsp;似曾相识</a>
+                                </td>
+                            </tr>
+                            <!-- 结束 -->
+                            <!-- 开始 -->
+                            <tr>
+                                <td>
+                                    <div>
+                                        <span>2</span>
+                                        <a class="tab_play" href=""></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="td_2">
+                                        <a href="">爱上你的好天气</a>
+                                        <b class="tab_muc_detail">-(电视剧《浪花一朵朵》主题曲)</b>
+                                        <span class="tab_mv"></span>
+                                    </span>
+                                </td>
+                                <td class="tab_time_box">
+                                    <span class="tab_time">03:46</span>
+                                    <div class="tab_but_box2">
+                                        <a class="tab_add" href=""></a>
+                                        <a class="tab_like" href=""></a>
+                                        <a class="tab_share" href=""></a>
+                                        <a class="tab_down" href=""></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="">谭松韵</a>
+                                </td>
+                                <td>
+                                    <a href="">DE&nbsp;JA&nbsp;VU&nbsp;似曾相识</a>
+                                </td>
+                            </tr>
+                            <!-- 开始 -->
+                            <tr>
+                                <td>
+                                    <div>
+                                        <span>3</span>
+                                        <a class="tab_play" href=""></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="td_2">
+																		<a href="">我的歌声里</a>
+																		<b class="tab_muc_detail">-(原唱：曲婉婷(国语))</b>
+																		<span class=""></span>
+                                    </span>
+                                </td>
+                                <td class="tab_time_box">
+                                    <span class="tab_time">03:46</span>
+                                    <div class="tab_but_box1">
+                                        <a class="tab_add" href=""></a>
+                                        <a class="tab_like" href=""></a>
+                                        <a class="tab_share" href=""></a>
+                                        <a class="tab_down" href=""></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="">张智霖</a>
+                                </td>
+                                <td>
+                                    <a href="">DE&nbsp;JA&nbsp;VU&nbsp;似曾相识</a>
+                                </td>
+                            </tr>
+                            <!-- 结束 -->
+                            <!-- 开始 -->
+                            <tr>
+                                <td>
+                                    <div>
+                                        <span>4</span>
+                                        <a class="tab_play" href=""></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="td_2">
+																			<a href="">爱上你的好天气</a>
+																			<b class="tab_muc_detail">-(电视剧《浪花一朵朵》主题曲)</b>
+																			<span class="tab_mv"></span>
+                                    </span>
+                                </td>
+                                <td class="tab_time_box">
+                                    <span class="tab_time">03:46</span>
+                                    <div class="tab_but_box2">
+                                        <a class="tab_add" href=""></a>
+                                        <a class="tab_like" href=""></a>
+                                        <a class="tab_share" href=""></a>
+                                        <a class="tab_down" href=""></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="">张智霖</a>
+                                </td>
+                                <td>
+                                    <a href="">DE&nbsp;JA&nbsp;VU&nbsp;似曾相识</a>
+                                </td>
+                            </tr>
+                            <!-- 结束 -->
+                            <!-- 开始 -->
+                            <tr>
+                                <td>
+                                    <div>
+                                        <span>4</span>
+                                        <a class="tab_play" href=""></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="td_2">
+																			<a href="">爱上你的好天气</a>
+																			<b class="tab_muc_detail">-(电视剧《浪花一朵朵》主题曲)</b>
+																			<span class="tab_mv"></span>
+                                    </span>
+                                </td>
+                                <td class="tab_time_box">
+                                    <span class="tab_time">03:46</span>
+                                    <div class="tab_but_box1">
+                                        <a class="tab_add" href=""></a>
+                                        <a class="tab_like" href=""></a>
+                                        <a class="tab_share" href=""></a>
+                                        <a class="tab_down" href=""></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="">张智霖</a>
+                                </td>
+                                <td>
+                                    <a href="">DE&nbsp;JA&nbsp;VU&nbsp;似曾相识</a>
+                                </td>
+                            </tr>
+                            <!-- 结束 -->
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 歌单内容部分结束 -->
+            </div>
+            <!-- 评论部分 -->
+            <div class="pd_m_commt"></div>
+        </div>
+        <!-- 页面右侧推荐 -->
+        <div class="pd_right"></div>
+    </div>
 </body>
+
 </html>

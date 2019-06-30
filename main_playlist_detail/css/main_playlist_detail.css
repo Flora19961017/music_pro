@@ -1,55 +1,92 @@
-p,h3{
+p,
+h3,
+table,
+th,
+td,
+tr,
+a {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     font-size: 12px;
     color: #333;
     font-family: Arial, Helvetica, sans-serif;
 }
-a{text-decoration: none}
+
+a {
+    text-decoration: none
+}
+
+
 /* 清除浮动 */
-.clear_both::after{
+
+.clear_both::after {
     content: "";
     display: block;
     clear: both;
 }
+
+
+/* 高度坍塌 */
+
+.dis_table::before {
+    content: "";
+    display: table;
+}
+
+
 /* 设置整体的宽度和边框 */
-.playlist_detail{
+
+.playlist_detail {
     width: 980px;
     border: 1px solid #d3d3d3;
     margin: 0 auto;
-}
-/* 左侧信息 */
-.pd_m_info{
     padding: 47px 30px 40px 39px;
 }
+
+
+/* 左侧信息 */
+
+
 /* 左侧信息图片 */
-.pd_info_pic{
+
+.pd_info_pic {
     float: left;
     border: 1px solid #eee;
     padding: 2px 2px 0 2px;
 }
+
+
 /* 左侧信息内容 */
-.pd_info_right{
-    float:left;
+
+.pd_info_right {
+    float: left;
     width: 410px;
     margin-left: 20px;
     font-size: 10px;
-    color:#777;
+    color: #777;
 }
+
+
 /* 左侧内容标题 */
-.pd_info_right h3:first-child{
+
+.pd_info_right h3:first-child {
     margin-bottom: 12px;
 }
+
+
 /* 左侧信息内容标题的歌单图片 */
-.pd_info_right h3:first-child i{
+
+.pd_info_right h3:first-child i {
     display: inline-block;
     width: 54px;
     height: 24px;
     background: url(../images/icon.png) 0 -243px;
 }
-.pd_info_right h3:first-child span{
+
+.pd_info_right h3:first-child span {
     display: inline-block;
     line-height: 24px;
     font-size: 20px;
@@ -57,45 +94,62 @@ a{text-decoration: none}
     padding-left: 60px;
     margin-top: -24px;
 }
+
+
 /* 左侧内容第二行 */
-.pd_info_2{
+
+.pd_info_2 {
     display: flex;
     line-height: 35px;
     margin-bottom: 20px;
 }
-.pd_info_2 a:first-child{
+
+.pd_info_2 a:first-child {
     height: 40px;
     margin-right: 5px;
 }
-.pd_info_2 a:nth-child(2){
-    color:#0c73c2;
+
+.pd_info_2 a:nth-child(2) {
+    color: #0c73c2;
     margin-bottom: 0px;
 }
-.pd_info_2 a:hover{
+
+.pd_info_2 a:hover {
     text-decoration: underline;
 }
+
+
 /* 网易云音乐旁的V */
-.pd_info_2 i{
+
+.pd_info_2 i {
     width: 11px;
     height: 13px;
     background: url(../images/icon.png) 0px -1px;
     margin-top: 11px;
     margin-right: 10px;
 }
+
+
 /* 创建时间 */
-.pd_info_2 span{
+
+.pd_info_2 span {
     color: #999;
 }
+
+
 /* 左侧内容第三行按钮 */
-.pd_but_box{
+
+.pd_but_box {
     display: flex;
     margin-bottom: 25px;
 }
-.pd_but_box a{
+
+.pd_but_box a {
     line-height: 31px;
     height: 31px;
 }
-.pd_but_box .but_play{
+
+.pd_but_box .but_play {
     width: 60px;
     background: url(../images/button2.png) 0 -633px;
     padding-left: 33px;
@@ -103,46 +157,320 @@ a{text-decoration: none}
     color: #fff;
     font-size: 13px;
 }
-.pd_but_box .but_add{
+
+.pd_but_box .but_add {
     width: 31px;
     background: url(../images/button2.png) 0 -1588px;
     margin-right: 5px;
 }
-.pd_but_box .but_file,.pd_but_box .but_share,.pd_but_box .but_down,.pd_but_box .but_commt{
+
+.pd_but_box .but_file,
+.pd_but_box .but_share,
+.pd_but_box .but_down,
+.pd_but_box .but_commt {
     min-width: 23px;
     padding: 0px 0px 0px 36px;
 }
-.pd_but_box .but_file{
+
+.pd_but_box .but_file {
     background: url(../images/button2.png) 0 -977px;
 }
+
+
 /* 设置精灵图所缺的右边 */
-.but_file+b,.but_share+b,.but_down+b,.but_commt+b{
+
+.but_file+b,
+.but_share+b,
+.but_down+b,
+.but_commt+b {
     display: inline-block;
     height: 31px;
     padding-right: 5px;
     background: url(../images/button2.png) right -1020px;
     margin-right: 5px;
 }
-.pd_but_box .but_share{background: url(../images/button2.png) 0 -1225px;}
-.pd_but_box .but_down{background: url(../images/button2.png) 0 -2761px;}
-.pd_but_box .but_commt{background: url(../images/button2.png) 0 -1465px;}
+
+.pd_but_box .but_share {
+    background: url(../images/button2.png) 0 -1225px;
+}
+
+.pd_but_box .but_down {
+    background: url(../images/button2.png) 0 -2761px;
+}
+
+.pd_but_box .but_commt {
+    background: url(../images/button2.png) 0 -1465px;
+}
+
+
 /* 设置标签 */
-.pd_info_mark{
+
+.pd_info_mark {
     display: flex;
     line-height: 22px;
     margin-bottom: 5px;
 }
-.pd_info_mark a{
+
+.pd_info_mark a {
     height: 22px;
     background: url(../images/button2.png) 0 0;
     padding-left: 10px;
-    color:#777;
+    color: #777;
     font-size: 8px;
 }
-.pd_info_mark a+b{
+
+.pd_info_mark a+b {
     height: 22px;
     padding-right: 10px;
     background: url(../images/button2.png) right -27px;
     margin-right: 10px;
 }
 
+
+/* 设置歌单列表部分 */
+
+
+/* 歌单标题部分 */
+
+.title_box {
+    color: #666;
+    margin-top: 20px;
+    border-bottom: 2px solid #c20c0c;
+}
+
+.title_box div:first-child {
+    float: left;
+    display: flex;
+}
+
+.title_box div:first-child h3 {
+    font: 20px "微软雅黑";
+    color: #333;
+}
+
+.title_box div:first-child span {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 9px;
+}
+
+.title_box div:last-child {
+    float: right;
+    line-height: 26px;
+    height: 26px;
+}
+
+
+/* 音乐图标 */
+
+.title_box .msc_pic {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/icon.png) -34px -863px;
+    vertical-align: middle;
+    margin-bottom: 6px;
+}
+
+.title_box a {
+    display: inline-block;
+    color: #4996d1;
+    text-decoration: underline;
+    margin-right: 20px;
+}
+
+.title_box .title_red {
+    color: #c20c0c;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/* 歌单主体部分 */
+
+.mic_table {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-spacing: 0;
+}
+
+
+/* 设置表格标题 */
+
+.mic_table th {
+    height: 35px;
+    line-height: 34px;
+    background: url(../images/table.png) 0 0;
+    color: #666;
+    text-align: left;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.mic_table th span {
+    display: inline-block;
+    height: 35px;
+    width: 100%;
+    background: url(../images/table.png) no-repeat 0 -56px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.mic_table th:first-child {
+    background: url(../images/table.png) no-repeat 0 0;
+}
+
+
+/* 设置表格主体 */
+
+.mic_table td {
+    height: 15px;
+    padding: 10px 11px;
+    line-height: 18px;
+}
+
+
+/* 设置表格隔行变色 */
+
+.mic_table tr:nth-child(odd) {
+    background: #f7f7f7;
+}
+
+
+/* 设置序号、时长样式  */
+
+.mic_table span {
+    color: #999;
+}
+
+.mic_table .tab_play {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../images/table.png) no-repeat 0 -103px;
+    float: right;
+}
+
+.mic_table .tab_play:hover {
+    background: url(../images/table.png) no-repeat 0 -128px;
+}
+
+.mic_table a {
+    color: #333;
+}
+
+
+/* 第二列 */
+
+.mic_table tbody td:nth-child(2) {
+    width: 237px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.mic_table .tab_muc_detail {
+    font-weight: normal;
+    color: #aeaeae;
+}
+
+.mic_table .tab_mv {
+    display: inline-block;
+    width: 23px;
+    height: 17px;
+    background: url(../images/table.png) no-repeat 0 -151px;
+}
+
+.mic_table .tab_mv {
+    display: inline-block;
+    width: 23px;
+    height: 17px;
+    margin-left: 10px;
+    background: url(../images/table.png) no-repeat 0 -151px;
+}
+
+.mic_table .tab_mv:hover {
+    background-position: -30px -151px;
+}
+
+
+/* 设置时长按钮 */
+
+.tab_but_box {
+    float: right;
+}
+
+
+/* 避免时长宽度溢出 */
+
+.mic_table .tab_time_box {
+    width: 111px;
+    position: relative;
+}
+
+.tab_time_box .tab_but_box1,
+.tab_time_box .tab_but_box2 {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+
+
+/* 默认but隐藏 */
+
+.tab_time_box .tab_but_box1 {
+    background-color: #f7f7f7;
+    display: none;
+}
+
+.tab_time_box .tab_but_box2 {
+    background-color: #fff;
+    display: none;
+}
+
+
+/* hover父元素时出现 */
+
+.mic_table tr:hover .tab_but_box1,
+.mic_table tr:hover .tab_but_box2 {
+    display: block;
+}
+
+.tab_but_box1 a,
+.tab_but_box2 a {
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+}
+
+.tab_add {
+    background: url(../images/icon.png) no-repeat 0 -700px;
+}
+
+.tab_add:hover {
+    background: url(../images/icon.png) no-repeat -22px -700px;
+}
+
+.tab_like {
+    background: url(../images/table.png) no-repeat 0 -174px;
+}
+
+.tab_like:hover {
+    background: url(../images/table.png) no-repeat -20px -174px;
+}
+
+.tab_share {
+    background: url(../images/table.png) no-repeat 0 -195px;
+}
+
+.tab_share:hover {
+    background: url(../images/table.png) no-repeat -20px -195px;
+}
+
+.tab_down {
+    background: url(../images/table.png) no-repeat -81px -174px;
+}
+
+.tab_down:hover {
+    background: url(../images/table.png) no-repeat -104px -174px;
+}
