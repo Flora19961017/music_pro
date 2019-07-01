@@ -1,3 +1,4 @@
+
 .newalbum{
     height:180px;
     width:687px;
@@ -73,11 +74,11 @@
 .icon_a{
     display:inline-block;
     height:12px;
-    width:12px;
+    width:11px;
     background-image:url(../images/index/index.png);
     background-position:-0px -238px;
     margin-top:10px;
-    margin-left:3px;
+  
 
 }
 /*jack-轮播左箭头*/
@@ -96,3 +97,4 @@
     background-repeat: no-repeat;
     background-position:-306px -74px;
 }
+/*更多箭头的边距*/

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width,initial-scale=1"/>
+    <title></title>
+    <!-- 引入4个文件，必须注意导入顺序-->
+    <link rel="stylesheet" href="./css/bootstrap.css"/>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/top.css"/>
+    <link rel="stylesheet" href="css/part2.css"/>
+    <link rel="stylesheet" href="./css/right.css"/>
+    <link rel="stylesheet" href="./css/news.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!--头部导航部分-->
+<div class="m-top">
+    <div class="wrap">
+        <img src="images/index/logo.png" alt="">
+        <ul class="m-nav">
+            <li>
+                <span>
+                    <a href="">发现音乐</a>
+                </span>
+            </li>
+            <li>
+                <span>
+                    <a href="">我的音乐</a>
+                </span>
+            </li>
+            <li>
+                <span>
+                    <a href="">朋友</a>
+                </span>
+            </li>
+            <li>
+                <span>
+                    <a href="">商城</a>
+                </span>
+            </li>
+            <li>
+                <span>
+                    <a href="">音乐人</a>
+                </span>  
+            </li>
+            <li>
+                 <span>
+                    <a href="">下载客户端</a>
+                </span>
+                <span class="hot"></span>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--第二个导航部分-->
+<div class="g_nav">
+        <ul class="nav">
+            <li>
+                <a class="a_one" href=""><em>推荐</em></a>
+            </li>
+            <li>
+                <a href=""><em>排行榜</em></a>
+            </li>
+            <li>
+                <a href=""><em>歌单</em></a>
+            </li>
+            <li>
+                <a href=""><em>主播电台</em></a>
+            </li>
+            <li>
+                <a href=""><em>歌手</em></a>
+            </li>
+            <li>
+                <a href=""><em>新碟上架</em></a>
+            </li>
+        </ul>
+</div>
+<div onload="foo()" class="lunbo_box" id="back">
+<div class="lunbo">
+    <!--轮播图片部分-->
+    <div class="barner">
+        <a href=""><img id="i1" src="./images/index/lunbo1.jpg" alt=""></a>
+        <a href=""></a>
+        <a class="click-flag btnl" href=""></a>
+        <a class="click-flag btnr" href=""></a>
+    </div>
+    <div class="f-cb">
+        <a class="pg" href=""></a>
+        <a class="pg" href=""></a>
+        <a class="pg" href=""></a>
+        <a class="pg" href=""></a>
+        <a class="pg" href=""></a>
+        <a class="pg" href=""></a>
+        <a class="pg" href=""></a>
+        <a class="pg" href=""></a>
+    </div>
+    <div class="download ">
+        <a href=""></a>
+    </div>
+</div>
+</div>
+<!-- 主体部分，包含右侧边栏-->
+<section>
+        <!--页面主体部门不包含右侧边栏-->
+        <div id="main_part">
+            <!--热门推荐部分-->
+            <div id="hot">
+                <!--热门推荐导航栏部分-->
+                <div class="hot_nav">
+                    <span class="hot_title"><span class="red_circle"></span><a href="#">热门推荐</a></span>
+                    <ul class="hot_ul">
+                        <li class="line"><a href="#">华语</a></li>
+                        <li class="line"><a href="#">流行</a></li>
+                        <li class="line"><a href="#">摇滚</a></li>
+                        <li class="line"><a href="#">民谣</a></li>
+                        <li class="line"><a href="#">电子</a></li>
+                    </ul>
+                    <span class="hot_more"><a href="#">更多</a><i class="hot_arrow">&nbsp;&nbsp;&nbsp;</i></span>
+                </div>
+                <!--热门推荐主体部分-->
+                <ul class="hot_main">
+                    <li class="hot_first_li">
+                        <a href="#"><img src="images/index/hot1.jpg" alt=""/></a>
+                        <p><a href="#">“爱而不得”用李焯雄的话怎么说</a></p>
+                        <div class="hot_li_bottom_first">
+                            <i class="hot_earphone"></i><span>1000万</span><a class="hot_play" href=""></a>
+                        </div>
+                    </li>
+                    <li class="hot_li">
+                        <a href="#"><img src="images/index/hot2.jpg" alt=""/></a>
+                        <p><a href="#">太阳落下的明天 我们可以奔跑着</a></p>
+                        <div class="hot_li_bottom">
+                            <i class="hot_earphone"></i><span>1000万</span><a class="hot_play" href=""></a>
+                        </div>
+                    </li>
+                    <li class="hot_li">
+                        <a href="#"><img src="images/index/hot3.jpg" alt=""/></a>
+                        <p><a href="#">【旋律控】超级好听的欧美旋律</a></p>
+                        <div class="hot_li_bottom">
+                            <i class="hot_earphone"></i><span>1000万</span><a class="hot_play" href=""></a>
+                        </div>
+                    </li>
+                    <li class="hot_li">
+                        <a href="#"><img src="images/index/hot4.jpg" alt=""/></a>
+                        <p><i class="hot_diantai"></i><a href="#">没关系，我们到此为止</a></p>
+                        <div class="hot_li_bottom">
+                            <i class="hot_earphone"></i><span>1000万</span><a class="hot_play" href=""></a>
+                        </div>
+                    </li>
+                    <li class="hot_first_li">
+                        <a href="#"><img src="images/index/hot5.jpg" alt=""/></a>
+                        <p><i class="hot_diantai"></i><a href="#">经典老歌，久听不厌</a></p>
+                        <div class="hot_li_bottom_first">
+                            <i class="hot_earphone"></i><span>1000万</span><a class="hot_play" href=""></a>
+                        </div>
+                    </li>
+                    <li class="hot_li">
+                        <a href="#"><img src="images/index/hot6.jpg" alt=""/></a>
+                        <p><a href="#">指望别人，你就输了</a></p>
+                        <div class="hot_li_bottom">
+                            <i class="hot_earphone"></i><span>1000万</span><a class="hot_play" href=""></a>
+                        </div>
+                    </li>
+                    <li class="hot_li">
+                        <a href="#"><img src="images/index/hot7.jpg" alt=""/></a>
+                        <p><a href="#">J.Fla|音乐十载，独宠J.Fla，英文惊艳翻唱</a></p>
+                        <div class="hot_li_bottom">
+                            <i class="hot_earphone"></i><span>1000万</span><a class="hot_play" href=""></a>
+                        </div>
+                    </li>
+                    <li class="hot_li">
+                        <a href="#"><img src="images/index/hot8.jpg" alt=""/></a>
+                        <p><i class="hot_diantai"></i><a href="#">来自天堂的魔鬼_王巨星</a></p>
+                        <div class="hot_li_bottom">
+                            <i class="hot_earphone"></i><span>1000万</span><a class="hot_play" href=""></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 梁文杰 -->
+            <div class="newalum_box ">
+                <div class="newtitel">
+                <span class="icon_c float-left"></span>
+                <a href="" class="float-left f-new">新碟上架</a>
+                <div class="mr-3">
+                    <span class="icon_a float-right"></span>
+                <a href="" class="float-right f-more mr-1">更多</a>
+            </div>
+                <div class="clearfix"></div>
+                </div>
+                <div class="bg-danger"></div>
+                <!--轮播图片-->
+                <div class="carousel newalbum pl-4" data-ride="carousel" id="lunbo">
+                    <!--轮播内容-->
+                    <div class="carousel-inner mt-3">
+                        <!--轮播显示的图片-->
+                        <div class="carousel-item active"  data-toggle="carousel" data-target="#lunbo">
+                            <!--轮播一次显示的图片-->
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a href="" class="back-img"><img src="./images/index/newalbum1.jpg" alt=""/></a>
+                                    <a href="" class="d-block f-t1" title="All Night(BTS WORLD OST Part.3)">All Night(BTS W...</a>
+                                    <a href="" class="d-block f-t2" title="All Night(BTS WORLD OST Part.3)">BTS(防弹少年团...</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="" class="back-img"><img src="./images/index/newalbum2.jpg" alt=""/></a>
+                                    <a href="" class="d-block f-t1" title="The Lazy Song">The Lazy Song</a>
+                                    <a href="" class="d-block f-t2" title="Bruno / Mars">Bruno / Mars</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="" class="back-img"><img src="./images/index/newalbum3.jpg" alt=""/></a>
+                                    <a href="" class="d-block f-t1" title="Uptown / Funk">Uptown / Funk</a>
+                                    <a href="" class="d-block f-t2" title="Mark / Ronson">Mark / Rons...</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="" class="back-img"><img src="./images/index/newalbum4.jpg" alt=""/></a>
+                                    <a href="" class="d-block f-t1" title="The First Snowflakes">The First Snow...</a>
+                                    <a href="" class="d-block f-t2" title="Bandari">Bandari</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="" class="back-img"><img src="./images/index/newalbum5.jpg" alt=""/></a>
+                                    <a href="" class="d-block f-t1" title="Dream lt Possible">Dream lt Poss...</a>
+                                    <a href="" class="d-block f-t2" title="Dalacey">Dalacey</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--轮播一次显示的图片-->
+                        <div class="carousel-item"  data-toggle="carousel" data-target="#lunbo">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a href="" class="back-img"><img src="./images/index/newalbum6.jpg" alt=""/></a>
+                                    <a href="" class="d-block f-t1" title="You Need To Calm Down">You Need To Cal...</a>
+                                    <a href="" class="d-block f-t2" title="Taylor Swift">Taylor Swift</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="" class="back-img"><img src="./images/index/newalbum7.jpg" alt=""/></a>
+                                    <a href="" class="d-block f-t1" title="强风吹拂 电视原声带">强风吹拂 电视原...</a>
+                                    <a href="" class="d-block f-t2" title="群星">群星</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="" class="back-img"><img src="./images/index/newalbum8.jpg" alt=""/></a>
+                                    <a href="" class="d-block f-t1" title="Señorita">Señorita</a>
+                                    <a href="" class="d-block f-t2" title="Shawn Mendes / Camila Cabello">Shawn Mendes /...</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="" class="back-img"><img src="./images/index/newalbum9.jpg" alt=""/></a>
+                                    <a href="" class="d-block f-t1" title="大象之歌">大象之歌</a>
+                                    <a href="" class="d-block f-t2" title="周笔畅">周笔畅</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="" class="back-img"><img src="./images/index/newalbum10.jpg" alt=""/></a>
+                                    <a href="" class="d-block f-t1" title="那就这样吧">那就这样吧</a>
+                                    <a href="" class="d-block f-t2" title="蔡程昱">蔡程昱</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--轮播一次显示的图片-->
+                        <div class="carousel-item"  data-toggle="carousel" data-target="#lunbo">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a href="" class="back-img"><img src="./images/index/newalbum11.jpg" alt=""/></a>
+                                    <a href="" class="d-block f-t1" title="Trust Myself">Trust Myself</a>
+                                    <a href="" class="d-block f-t2" title="袁娅维  /  Gallant">袁娅维  /  Gallant</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="" class="back-img"><img src="./images/index/newalbum12.jpg" alt=""/></a>
+                                    <a href="" class="d-block f-t1" title="光之海(Live合唱版)">光之海(Live合唱版)</a>
+                                    <a href="" class="d-block f-t2" title="A-Lin / 王晰 / 李向哲 / 蔡尧 / 星元">A-Lin / 王晰 / ...</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="" class="back-img"><img src="./images/index/newalbum13.jpg" alt=""/></a>
+                                    <a href="" class="d-block f-t1" title="Maps">Maps</a>
+                                    <a href="" class="d-block f-t2" title="Far East Movem/ 张碧晨">Far East Movem...</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="" class="back-img"><img src="./images/index/newalbum14.jpg" alt=""/></a>
+                                    <a href="" class="d-block f-t1" title="Like A Fan">Like A Fan</a>
+                                    <a href="" class="d-block f-t2" title="范丞丞">范丞丞</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="" class="back-img"><img src="./images/index/newalbum1.jpg" alt=""/></a>
+                                    <a href="" class="d-block f-t1" title="All Night(BTS WORLD OST Part.3)">All Night(BTS W...</a>
+                                    <a href="" class="d-block f-t2" title="All Night(BTS WORLD OST Part.3)">BTS(防弹少年团...</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--轮播图左右箭头-->
+                    <div>
+                        <!--轮播图左箭头-->
+                        <a href="#lunbo" class="carousel-control-prev" data-slide="prev">
+                            <span class=" po_left"></span></a>
+                        <!--轮播图右箭头-->
+                        <a href="#lunbo" class="carousel-control-next" data-slide="next">
+                            <span class="po_right"></span></a>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!--low芬-->
+            <div class="container">
+                    <div class="right-aside right_margin">
+                        <div class="right-top">
+                            <p class="">登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+                            <a href="#">用户登录</a>
+                        </div>
+                        <div class="right-middle">
+                            <h3>
+                                <span>入驻歌手</span>
+                                <a href="#">查看全部></a>
+                            </h3>
+                            <ul class="list-unstyled">
+                                <li class="">
+                                    <a href="#" class="media">
+                                        <img class="rounded" src="./images/index/rightpart1.jpg" alt=""/>
+                                        <div class="media-body">
+                                            <h4>张惠妹aMEI</h4>
+                                            <p>台湾歌手张惠妹</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="media">
+                                        <img class="rounded" src="./images/index/rightpart2.jpg" alt=""/>
+                                        <div class="media-body">
+                                            <h4>Fine乐团</h4>
+                                            <p>独立音乐人</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="media">
+                                        <img class="rounded" src="./images/index/rightpart3.jpg" alt=""/>
+                                        <div class="media-body">
+                                            <h4>萬曉利</h4>
+                                            <p>民谣歌手、中国现...</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="media">
+                                        <img  class="rounded" src="./images/index/rightpart4.jpg" alt=""/>
+                                        <div class="media-body">
+                                            <h4>音乐人赵雷</h4>
+                                            <p>民谣歌手</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="media">
+                                        <img  class="rounded" src="./images/index/rightpart5.jpg" alt=""/>
+                                        <div class="media-body">
+                                            <h4>王三薄</h4>
+                                            <p>音乐人</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                                <a class="a-btn" href="#">申请成为网易音乐人</a>
+                        </div>
+                        <div class="right-bottom">
+                            <h4>热门主播</h4>
+                            <ul class="list-unstyled">
+                                <li class="">
+                                    <div class="media">
+                                        <img class="rounded" src="./images/index/anchor1.jpg" alt=""/>
+                                        <div class="media-body">
+                                            <p class="p-bottom pb-1">
+                                                <a href="#">陈立</a>
+                                                <sup class="u-icn"></sup>
+                                            </p>
+                                            <p class="p-bottom">心里学家、美食家陈立教授</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="media">
+                                        <img class="rounded" src="./images/index/anchor2.jpg" alt=""/>
+                                        <div class="media-body">
+                                            <p class="p-bottom pb-1">
+                                                <a href="#">DJ艳秋</a>
+                                                <sup class="u-icn"></sup>
+                                            </p>
+                                            <p class="p-bottom">著名音乐节目主持人</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="media">
+                                        <img class="rounded" src="./images/index/anchor3.jpg" alt=""/>
+                                        <div class="media-body">
+                                            <p class="p-bottom pb-1">
+                                                <a href="#">国家大剧院古典音乐频道</a>
+                                                <sup class="u-icn "></sup>
+                                            </p>
+                                            <p class="p-bottom">国家大剧院古典音乐官方</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="media">
+                                        <img  class="rounded" src="./images/index/anchor4.jpg" alt=""/>
+                                        <div class="media-body">
+                                            <p class="p-bottom pb-1">
+                                                <a href="#">谢谢收听</a>
+                                                <sup class="u-icn"></sup>
+                                            </p>
+                                            <p class="p-bottom">南京电台主持人王磬</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="media">
+                                        <img  class="rounded" src="./images/index/anchor5.jpg" alt=""/>
+                                        <div class="media-body">
+                                            <p class="p-bottom pb-1">
+                                                <a href="#">DJ晓苏</a>
+                                                <sup class="u-icn"></sup>
+                                            </p>
+                                            <p class="p-bottom">独立DJ,CRI环球旅游广播...</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                <a class="a-right_aside" href="#"></a>
+            </div>
+    </section>
+</body>
+</html>
