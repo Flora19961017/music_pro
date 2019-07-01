@@ -1,12 +1,15 @@
+*{margin:0px;padding: 0px;}
 /* 左边包含top（歌词）和bottom评论的宽 */
 .left{
     width:709px;
     margin:0 auto;
     padding: 47px 30px 40px 39px;
+    position: relative;
 
 }
 .left_top_img{
     width:198px;height:198px;
+    margin:0;
 }
 /* 设置图片父元素相对定位 */
 .u_cover{
@@ -27,6 +30,9 @@
     color: #333;
     margin:45px 0 0 12px;
 }
+.out a{
+    color: #0c73c2;
+}
 /* 音乐符精灵图样式 */
 .u-icn{
     display: inline-block;
@@ -39,4 +45,245 @@
 .songs{
     width:414px;
     min-height: 419px;
+    position: absolute;
+    top:23px;
+    right:117px;
 }
+.vip_songs{
+    width:100%;height:51px;
+}
+/* vip单曲样式 */
+.u-icn-song{
+    display: inline-block;
+    width: 75px;height:27px;
+    line-height: 25px;
+    background-size: 100% 100%;
+    background: url(../images/VIP.png) no-repeat center;
+    color: white;
+    font-size: 13px;
+    padding-left: 8px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+/* Maps和播放mv */
+.tit{
+    position: relative;
+    top:-29px;
+    right:-10px;
+    font-size: 24px;
+    margin-left:80px; 
+}
+.maps_s{
+    margin-right: 7px;
+}
+/* 播放mv */
+.mv_icn{
+    display: inline-block;
+    width:21px;height:18px;
+    background: url(../images/icon.png) no-repeat 0 -18px;
+}
+.subtit{
+    font-size: 14px;
+    margin: 1px 0 5px;
+    color: #bababa;
+}
+/* 歌手信息 */
+.p_singer{
+    font-size: 12px;
+    color:#999;
+    margin:10px 0;
+}
+.p_singer a{
+    text-decoration: none;
+    color:#0c73c2;
+}
+.p_singer a:hover{
+    text-decoration: underline;
+}
+/* 精灵图按钮样式 */
+.btn_group{
+    width:423px;height:32px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn_l{
+    display: inline-block;
+    background: url(../images/ltrE-cu.png) no-repeat;
+    background-size: 100% 100%;
+    width:100px;height: 32px;
+    color:white;
+    font-size: 12px;
+    line-height: 32px; 
+    text-align: right;
+    padding:0 5px 0 0;
+    margin-right: 4px;
+}
+.btn_fav{
+    display: inline-block;
+    width:54px;height:31px;
+    background:url(../images/button2.png) no-repeat 0 -59px;  
+    font-size: 12px;color: #333;
+}
+.btn_fav b{
+    display: inline-block;
+    width:5px;height: 31px;
+    background: url(../images/button2.png) no-repeat -243px -99px;
+    
+}
+.file{
+    display: inline-block;
+    width:17px;height:17px;
+    background: url(../images/icon2.png) no-repeat -110px -18px;
+}
+/* 歌词文字样式 */
+.songwords{
+    font-size: 12px;
+    color:#333;
+    margin-top: 13px;
+    line-height: 23px;
+}
+.song_z{
+    font-size: 12px;
+    color: #333;
+    margin-top: 5px;
+}
+.song_z a{
+    text-decoration: none;
+    color:#0c73c2;
+}
+.song_z a:hover{text-decoration: underline;}
+.song_z b{
+    display: inline-block;
+    width: 11px;height:8px;
+    background: url(../images/icon.png) no-repeat -65px -520px;
+}
+.p_error,.p_w{
+    height:30px;
+    font-size: 12px;
+    text-align: right;
+}
+.p_error a{color:#999;}
+.p_w{color:#666;}
+.p_w a{color: #0c73c2;}
+/* 左侧底部 */
+.left_bottom{
+    width:640px;height:428px;
+    margin-top:290px;
+}
+.u-title{
+    width:640px;height:33px;
+    border-bottom: 2px solid #c20c0c;
+}
+.u-title span:first-child{font-size: 20px;line-height: 28px;color:#333;}
+.u-title span:last-child{font-size:12px;color:#666;margin:9px 0 0 20px;}
+/* 整个评论区 */
+.comment{
+    margin-top:20px;
+}
+/* 写评论区*/
+.m_write{
+    width:640px;height:90px;
+    margin-bottom: 20px;
+}
+.m_write img{
+    float:left;
+    width:50px;height:50px;
+    margin-right:10px;
+}
+.area{
+    width:564px;height:50px;
+    display: block;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    line-height: 19px;
+    resize: none;
+    overflow: auto;
+    font-size: 12px;
+    color: #333;
+    padding: 5px 6px 6px;
+}
+/* 写评论区的大于符号 */
+.corr{
+    width:30px;height:30px;
+    overflow: hidden;
+    position: relative;
+    top:-111px;
+    left:51px;
+}
+.corr span{
+    display: block;
+    font-size: 32px;
+    height:10px;
+    color:#fff;
+}
+.btns{
+    padding-top: 10px;
+    padding-left:60px;
+    margin-top:-77px;
+}
+/* 评论表情 */
+.btns span:first-child{
+    display: inline-block;
+    width:18px;height:18px;
+    background: url(../images/icon.png) no-repeat -40px -490px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.btns span:nth-child(2){
+    display: inline-block;
+    width:18px;height:18px;
+    background: url(../images/icon.png) no-repeat -60px -490px;
+    cursor: pointer;
+}
+.btns span:last-child{
+    font-size:12px;
+    color:#999;
+    float: right;
+    margin-right: 10px;
+    line-height: 25px;
+    
+}
+/* 评论按钮 */
+.btns a{
+    float: right;;
+    width:46px;height:25px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 12px;
+    color:white;
+    text-decoration: none;
+    background: url(../images/button.png) no-repeat -84px -64px;
+}
+.btns a:hover{
+    background-position: -84px -94px;
+    color: #fff;
+    text-decoration: none;
+}
+/* 精彩评论 */
+.com_flag h3{
+    font-size: 12px;
+    color:#333;
+    height:20px;
+    border-bottom:1px solid #cfcfcf;
+    margin-top:30px;
+}
+/* 某个用户评论详情 */
+.com_detail{
+    width:640px;height:71px;
+    padding:15px 0;
+}
+.com_text{
+    font-size: 12px;
+    color: #333;
+    margin-left: 60px;
+    margin-top: -53px;
+}
+.com_text img{
+    display: inline-block;
+    width:26px;height:12px;
+}
+.com_text a{
+    color:#0c73c2;
+    text-decoration: none;
+}
+.com_text a:hover{text-decoration: underline;}
