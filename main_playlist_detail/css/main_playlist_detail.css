@@ -4,7 +4,8 @@ table,
 th,
 td,
 tr,
-a {
+a,
+textarea {
     padding: 0;
     margin: 0;
 }
@@ -473,4 +474,71 @@ a {
 
 .tab_down:hover {
     background: url(../images/table.png) no-repeat -104px -174px;
+}
+
+
+/* 评论部分 */
+
+
+/* 评论标题 */
+
+.commt_title {
+    font: 20px "微软雅黑";
+    color: #333;
+}
+
+.commt_title+span {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 9px;
+}
+
+
+/* 评论主体 */
+
+.pd_commt {
+    margin-top: 20px;
+}
+
+
+/* 评论框 */
+
+.commt_box .touxiang img {
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+
+.commt_box .commt {
+    float: left;
+}
+
+.commt {
+    width: 578px;
+    position: relative
+}
+
+.commt_txt {
+    display: block;
+    height: 50px;
+    width: 100%;
+    padding: 5px 6px 6px;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    line-height: 19px;
+    resize: none;
+    margin-left: 10px;
+}
+
+.commt_txt:focus {
+    outline: none;
+}
+
+.commt_txt_bg {
+    display: inline-block;
+    position: absolute;
+    width: 14px;
+    height: 20px;
+    background: url(../images/commt_bg.png);
+    top: 10px;
 }
