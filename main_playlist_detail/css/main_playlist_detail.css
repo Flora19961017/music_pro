@@ -335,7 +335,7 @@ ul{
 
 .mic_table td {
     padding: 6px 10px;
-    line-height: 18px;
+    line-height: 19px;
     text-align: left;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -376,7 +376,8 @@ ul{
 /* 第二列 */
 
 .mic_table tbody td:nth-child(2) {
-    width: 237px;
+    width: 240px;
+    height:20px;
     box-sizing: border-box;
     white-space: nowrap;
     overflow: hidden;
@@ -385,13 +386,6 @@ ul{
 .mic_table .tab_muc_detail {
     font-weight: normal;
     color: #aeaeae;
-}
-
-.mic_table .tab_mv {
-    display: inline-block;
-    width: 23px;
-    height: 17px;
-    background: url(../images/table.png) no-repeat 0 -151px;
 }
 
 .mic_table .tab_mv {
@@ -424,7 +418,7 @@ ul{
 .tab_time_box .tab_but_box1,
 .tab_time_box .tab_but_box2 {
     position: absolute;
-    top: 12px;
+    top: 10px;
     left: 10px;
 }
 
