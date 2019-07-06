@@ -1,11 +1,123 @@
 /*第一个导航部分*/
 .m-top{
     background:  #242424;
+   background:  #242424;
+   box-sizing: border-box;
+   height: 70px;
+   border-bottom: 1px solid #000;
+   font-size: 12px;
+   color:#333;
+   font-family:Arial, Helvetica, sans-serif;
+}
+/* 清除高度坍塌 */
+.clear_both::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.wrap{padding-left:70px;padding-right: 160px;}
+.wrap img{
+    height: 100%;
+    width: 157px;
+    float: left;
+    padding-right: 20px;
+    text-indent: -9999px;
+    margin-top:19px; 
+    margin-left: 64px;
+}
+.m-nav li{
+    list-style-type:none;
+    float: left;
+    text-align: center;
+    padding:0 19px;
+    line-height: 70px;
+    cursor: pointer;
+
+}
+.m-nav li:hover{
+    height: 70px;
+    background: #000;
+}
+.m-nav li span a{
+    color: #ccc;
+    font-size:14px;
+}
+.m-nav li span a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.hot{
+    width: 28px;
+    height: 19px;
+    display: inline-block;
+    background: url(../images/index/topbar.png) no-repeat;
+    background-position: -190px 0;
+}
+/* 登录按钮 */
+.top-login{
+    float: right;
+    height: 45px;
+    background: url(../images/index/topbar.png) no-repeat right -47px;
+    margin: 19px 0 0 20px;
+    padding: 0 22px 0 0;
+}
+.login{
+    display: block;
+    width: 28px;
+    margin-top: 7px;
+    color: #787878;
+    text-decoration: underline;
+}
+.login:hover{color: #787878;}
+/* 创作者中心 */
+.top-vd{
+    float: right;
+    width: 90px;
+    height: 32px;
+    margin: 19px 0 0 12px;
+    box-sizing: border-box;
+    padding-left: 16px;
+    border: 1px solid #4F4F4F;
+    line-height: 33px;
+    color: #ccc;
+    border-radius: 20px;
+}
+.top-vd:hover{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #ccc;
+}
+.top-search{
+    float: right;
+    width: 158px;
+    height: 32px;
+    line-height: 32px;
+    margin-top: 19px;
+    background: url(../images/index/topbar.png) no-repeat;
+    background-position: 0 -99px;
+    background-color: #fff;
+    border-radius: 32px;
+}
+.top-search input{
+    width: 75%;
+    color: #333;
+    line-height: 16px;
+    background: transparent;
+    outline: none;
+    border:0;
+    margin-left: 30px;
+    
+}
+/*第二个导航部分*/
+.g_nav{
+    height: 35px;
+    background-color:#C20C0C;
     box-sizing: border-box;
     height: 70px;
     border-bottom: 1px solid #000;
     font-size: 12px;
     color:#333;
+<<<<<<< HEAD
     font-family:Arial, Helvetica, sans-serif;
  }
  /* 清除高度坍塌 */
@@ -128,6 +240,100 @@
      
  }
  .nav li a em{
+=======
+    font-size:12px;
+}
+.nav{
+    width:100%;
+    padding-left: 296px;
+}
+.nav li a{
+    color:#fff;
+    float: left;
+    height: 34px;
+    text-align: center;
+    
+}
+.nav li a em{
+   display: inline-block;
+   height: 20px;
+   padding: 0 13px;
+   margin: 7px 17px 0;
+   border-radius: 20px;
+   line-height: 21px;
+   font-style:normal;
+   text-align:left;
+   font-size:inherit;
+}
+.a_one em{
+    background: #9B0909;
+}
+/*轮播图部分*/
+@keyframes next{
+    0%{background: #c6c6c8}
+    12.5%{background: #000}
+    25%{background: #fdd2dc}
+    37.5%{background:  #d9c09d}
+    50%{background: #0152d7}
+    62.5%{background: #02263e}
+    75%{background: #5b626a}
+    87.5%{background:#2a2f43}
+    
+}
+.lunbo_box{
+    background: #c6c6c8;
+    animation:next 16s 1500ms infinite ease-out;
+    animation-fill-mode:both;
+
+}
+.lunbo{
+    width: 984px;
+    height: 336px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+.barner{float: left; position: relative;}
+.download a{
+    display: block;
+    width: 254px;
+    height: 336px;
+    background: url(../images/index/download1.png) no-repeat;
+    float: left;
+}
+/*轮播图箭头部分*/
+.btnl{
+    display: block;
+    position: absolute;
+    left: -68px;
+    width: 37px;
+    height: 63px;
+    top: 50%;
+    margin-top: -31px;
+    background: url(../images/index/banner.png);
+    background-position:0 -360px;
+}
+.btnr{
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -31px;
+    right: -312px;
+    background: url(../images/index/banner.png);
+    background-position: 0 -508px;
+    width: 37px;
+    height: 63px;
+}
+/*轮播图圆点部分*/
+.f-cb{
+    position: absolute;
+    top: 310px;
+    width: 730px;
+    height: 20px;
+    text-align: center;
+}
+.pg{
+>>>>>>> 4084a97161e1546f2895ad74ec5e31d22bae38b0
     display: inline-block;
     height: 20px;
     padding: 0 13px;

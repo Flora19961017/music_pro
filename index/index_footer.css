@@ -1,0 +1,114 @@
+/*最底部的版权*/
+/*.f-cb:active{
+    content: "";
+    display: block;
+    clear: both;
+}*/
+.footer{
+    position: relative;
+    height: 148px;
+    overflow: hidden;
+    border-top: 1px solid #d3d3d3;
+    background: #f2f2f2;
+}
+.m-ft{
+    width: 980px;height: 91px;
+    margin: 0 auto;
+}
+.m-ft::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.copy{
+    float: left;
+    width: 520px;
+    padding-top:15px;
+    line-height: 24px;
+}
+.s-fc4 a{
+    color:#999;
+    font-size:12px;
+}
+.s-fc4 a:hover{
+    color:#999;
+}
+.s-fc4 span{
+    margin:0px 8px 0 10px;
+    color:#c2c2c2;
+}
+.s-fc3 span,a{
+    color: #666;
+    font-size:12px;
+}
+/*底部四个图标*/
+.f-fr{
+    width: 330px;
+    margin-top: 21px;
+    float: right;   
+}
+.unit{
+    width: 60px;
+    height: 70px;
+    float: left;
+    color: #666;
+    list-style: none;
+    margin-left:22px;
+}
+.logonew{
+    display: block;
+    float: none;
+    width: 50px;
+    height: 45px;
+    margin: 0 auto;
+}
+.tt{
+    display: inline-block;
+    margin:5px 5px 0;
+    width: 52px;
+    height: 14px;
+}
+/*第一个图标*/
+.logo-auth{
+    background: url(../images/index/foot_enter.png) no-repeat;
+    background-size: 110px 450px;
+    background-position: -63px -101px;
+}
+.tt-auth{
+    background: url(../images/index/foot_enter_tt.png) no-repeat;
+    background-size:180px 100px;
+    background-position: -1px -91px;
+}
+/*第二个图标*/
+.logo-musician{
+    background: url(../images/index/foot_enter.png) no-repeat;
+    background-size:110px 450px;
+    background-position: 0px 0px;
+}
+.tt-musician{
+    background: url(../images/index/foot_enter_tt.png) no-repeat;
+    background-size:180px 100px;
+    background-position: 0px 0px;
+}
+/*第三个图标*/
+.logo-reward{
+    background: url(../images/index/foot_enter.png) no-repeat;
+    background-size:110px 450px;
+    background-position: -60px -50px;
+}
+.tt-reward{
+    background: url(../images/index/foot_enter_tt.png) no-repeat;
+    background-size:180px 100px;
+    background-position: 0px -54px;
+}
+/*第四个图标*/
+.logo-cash{
+    background: url(../images/index/foot_enter.png) no-repeat;
+    background-size:110px 450px;
+    background-position: 0px -101px; 
+}
+.tt-cash{
+    background: url(../images/index/foot_enter_tt.png) no-repeat;
+    background-size:180px 100px;
+    background-position: -1px -72px;
+}
