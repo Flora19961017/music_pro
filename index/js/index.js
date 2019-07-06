@@ -20,5 +20,5 @@ function foo()
     }
    
 }
- setInterval(foo,2000)
+ setInterval(foo,2000);
  
