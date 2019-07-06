@@ -1,26 +1,231 @@
-.g-topbar{
-    width:1349px;
-    height:105px;
-    top:0px;
+body{
+ mragin:0px;
 }
 
-.m-top{
-    width:1349px;
-    height:70px;
+/*总体div*/
+.zong{
+    width:900px;
+    height:100%;
+    border-left:1px solid #bbbbbb;
+    border-right:1px solid #bbbbbb;
+    border-bottom:1px solid #bbbbbb;
+    padding:40px;
+    margin-left:170px;
+    margin-bottom:120px;
 }
 
-.wrap f-cb{
-    width:1100px;
-    height:70px;
+/*热门新碟导航栏*/
+.f1{
+    width:900px;
+    border-bottom:2px solid #c20c0c;
+    display: block;
 }
-
-.logo{
-    width:176px;
-    height:69px;
+   /*热门新碟*/
+ .xindie{
+        width:96px;
+        height:32px;
+        font-size: 24px;
+        font-weight: normal;
+        color:#333333;
+        float:left;
 }
+ .hhh{
+    width:100%;
+    height:40px;
+    margin: 0px;
+ }
 
+ .gequ{
+     width:933px;
+     height:416px;
+     padding:0px;
+     list-style: none;
+     margin: 30px 0px 0px -33px;
+     }
+     .gequ1{
+        width:933px;
+        height:210px;
+        padding:0px;
+        list-style: none;
+        margin: 30px 0px 0px -33px;
+        }
 
-.daohanglan{
-    width:508px;
-    height:70px;
+    /*图片加a标签*/
+ .tupianzong{
+     width:153px;
+     height:178px;
+     padding:0px 0px 30px 33px;
+     float: left;
+     display: list-item;
+    text-align:-webkit-match-parent;
+    position:relative;
+} 
+   
+ /*img图片*/
+   .tupian{
+       width:130px;
+       height:130px;
+       display: block;
+   }
+ 
+   .tupiandiv{
+    width:130px;
+    height:130px;
+   }
+   .datupian{
+       width:153px;
+       height:130px;
+       background:url(../images/coverall.png);
+       background-position: 0px -845px;
+       position: absolute;
+       top:0px;
+       left:33px;
+   }
+
+   .bofang{
+       width:30px;
+       height:30px;
+       background:url(../images/timg.jpg);
+       background-position: -200px -100px;
+       position: absolute;
+       top:97px;
+       left:127px;
+       border-radius:50%;
+       opacity:0;
+    }
+    .tupiandiv:hover .bofang{
+        opacity:1;
+    }
+      
+    .bofang:hover{
+        opacity:0.8;
+    }
+
+   .wenzishang{
+    font-size: 14px;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration:none;
+   }
+    .wenzishang:hover {
+        text-decoration: underline;
+    }
+
+   .wenzixia{
+    font-size: 12px;
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration:none;
+   }
+   .wenzixia:hover{
+    text-decoration: underline;
+   }
+    
+   .shangp{
+    width:130px;
+    height:20.38px;
+    margin: 8px 0px 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+   }
+
+   .xiap{
+    width:130px;
+    height:20.38px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    margin:0px;
+   }
+
+   .xiaozidiv{
+       width:241px;
+       height:16px;
+       float:left;
+       margin: 12px 0 0 20px;
+       display:block;
+       font-size: 12px;
+       font-family: Arial, Helvetica, sans-serif;
+   }
+
+   .line{
+    margin: 0 10px;
+    color:#666666;
+    width:3.11px;
+    height:14px;
 }
+  
+
+  /*分页栏*/
+  .fenye{
+      width:900px;
+      height:26px;
+      margin:20px 0 20px 0;
+      text-align: center;
+      display:inline-block;
+  }
+
+   /*上一页*/
+   .shangyiye{
+       width:50px;
+       height:32px;
+       border: 1px solid #ccc;
+       list-style: none;
+       background-color:#f3f1f1;
+       color:#cacaca;
+       font-size:12px;
+       padding:3px 13px 3px 13px;
+       text-decoration:none;
+       border-radius: 2px;
+   } 
+
+   /*分页导航的数字*/
+   .shuzi{
+    width:24px;
+    height:24px;
+    font-size: 12px;
+    text-decoration:none;
+    border: 1px solid #666666;
+    padding:3px 8px 3px 8px;
+    border-radius: 2px;
+    color:#ffffff;
+    background:red;
+   }
+   .shuzi1{
+    width:24px;
+    height:24px;
+    font-size: 12px;
+    text-decoration:none;
+    border: 1px solid #ccc;
+    padding:3px 8px 3px 8px;
+    border-radius: 2px;
+    color:#000000;
+   }
+   .shuzi1:hover{
+       border: 1px solid #666666;
+   }
+
+   .xiayiye{
+    width:50px;
+    height:32px;
+    border: 1px solid #ccc;
+    list-style: none;
+    background-color:#f1f1f1;
+    color:#000000;
+    font-size:12px;
+    padding:3px 14px 3px 14px;
+    text-decoration:none;
+    border-radius: 2px;
+}
+  
+ .xiayiye:hover{
+    border: 1px solid #666  ;
+ }
+
+
+ .dian{
+    text-decoration:none;
+ }
