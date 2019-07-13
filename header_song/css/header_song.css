@@ -3,7 +3,7 @@
 body{font-size:12px;}
 /* 左边包含top（歌词）和bottom评论的宽 */
 .parent{
-    width:1060px;
+    width: 1000px;
     margin: 0 auto;
     border:1px solid #ccc;
     border-top:none;

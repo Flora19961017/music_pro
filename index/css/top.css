@@ -117,7 +117,6 @@
     border-bottom: 1px solid #000;
     font-size: 12px;
     color:#333;
-<<<<<<< HEAD
     font-family:Arial, Helvetica, sans-serif;
  }
  /* 清除高度坍塌 */
@@ -240,7 +239,6 @@
      
  }
  .nav li a em{
-=======
     font-size:12px;
 }
 .nav{
@@ -333,7 +331,6 @@
     text-align: center;
 }
 .pg{
->>>>>>> 4084a97161e1546f2895ad74ec5e31d22bae38b0
     display: inline-block;
     height: 20px;
     padding: 0 13px;
