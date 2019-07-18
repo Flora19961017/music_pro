@@ -23,7 +23,7 @@ dl,dt,dd{
 }
 /*设置主体页面包含右侧边宽度*/
 section{
-  width:980px;
+  width:981px;
   margin: 0 auto;
   background: #fff;
   border-right:1px solid #eee; 
