@@ -64,10 +64,18 @@ body{
     border:0 1px;
     margin:0 auto;
 }
+#toplist::after{
+    display:block;
+    content:"";
+    clear:both;
+}
+/* 清除浮动 */
+
 /* 设置左边div */
 #top-left{
     float:left;
     width:240px;
+    border-right:1px solid #d5d5d5 ;
 }
 .left-container{
     margin-top:40px;
@@ -79,7 +87,7 @@ body{
 }
 /* 设置每个列表的内边距*/
 .ul-list li{
-    width:240px;
+    width:239px;
     height:62px;
     padding:10px 0 10px 20px;
     cursor: pointer;
@@ -734,7 +742,11 @@ float:left;}
     background: url(../images/button2.png) 0 -977px;
 }
 
-
+/* 设置右边浮动 */
+.float-inn{
+    float:right;
+    width:738px;
+}
 /* 设置精灵图所缺的右边 */
 
 .but_file+b,
@@ -909,7 +921,7 @@ float:left;}
     width: 17px;
     height: 17px;
     background: url(../images/table.png) no-repeat 0 -103px;
-    float: right;
+    
 }
 
 .mic_table .tab_play:hover {
@@ -1306,3 +1318,8 @@ float:left;}
 .more_down a{
     color: #999;
 }
+
+
+
+
+
