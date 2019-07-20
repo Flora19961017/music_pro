@@ -1,0 +1,513 @@
+*{margin:0px;padding: 0px;}
+/* 设置通用类 */
+body{font-size:12px;}
+/* 左边包含top（歌词）和bottom评论的宽 */
+.parent{
+    width: 1000px;
+    margin: 0 auto;
+    border:1px solid #ccc;
+    border-top:none;
+}
+.left{
+    width:709px;
+    margin:0 auto;
+    padding: 47px 0 40px 39px;
+    position: relative;
+    float:left;
+    border-right: 1px solid #ccc;
+}
+.left_top_img{
+    width:198px;height:198px;
+    margin:0;
+    position: relative;
+}
+/* 设置图片父元素相对定位 */
+.u_cover{
+    position: relative;
+}
+.u_cover img{
+    position: absolute;
+    top:18px;
+    left:29px;
+}
+/* 背景精灵图 */
+.bg_img{
+    display: inline-block;
+    position: absolute;
+    top:-20px;
+    left:-9px;
+    width:206px;height: 205px;
+    background: url(../images/coverall.png) no-repeat -140px -580px;
+}
+/* 生成外部链接样式 */
+.out{
+    font-size:12px;
+    color: #333;
+    position:absolute;
+    top:200px;
+    left:40px;
+}
+.out a{
+    color: #0c73c2;
+}
+/* 音乐符精灵图样式 */
+.u-icn{
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    width:16px;height:16px;
+    background: url(../images/icon.png) no-repeat -34px -863px;
+}
+/* 歌词主体样式*/
+.songs{
+    width:414px;
+    min-height: 419px;
+    position: absolute;
+    top:33px;
+    right:70px;
+}
+.vip_songs{
+    width:100%;height:51px;
+}
+/* vip单曲样式 */
+.u-icn-song{
+    display: inline-block;
+    width: 75px;height:27px;
+    line-height: 25px;
+    background-size:contain;
+    background: url(../images/VIP.png) no-repeat center center;
+    color: white;
+    font-size: 13px;
+    padding-left: 8px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+/* Maps和播放mv */
+.tit{
+    position: relative;
+    top:-29px;
+    right:-10px;
+    font-size: 24px;
+    margin-left:80px; 
+}
+.maps_s{
+    margin-right: 7px;
+}
+/* 播放mv */
+.mv_icn{
+    display: inline-block;
+    width:21px;height:18px;
+    background: url(../images/icon.png) no-repeat 0 -18px;
+}
+.subtit{
+    font-size: 14px;
+    margin: 1px 0 5px;
+    color: #bababa;
+}
+/* 歌手信息 */
+.p_singer{
+    font-size: 12px;
+    color:#999;
+    margin:10px 0;
+}
+.p_singer a{
+    text-decoration: none;
+    color:#0c73c2;
+}
+.p_singer a:hover{
+    text-decoration: underline;
+}
+/* 精灵图按钮样式 */
+.btn_l{
+    display: inline-block;
+    background: url(../images/ltrE-cu.png) no-repeat;
+    background-size: 100% 100%;
+    width:100px;height: 32px;
+    color:white;
+    font-size: 12px;
+    line-height: 32px; 
+    text-align: right;
+    padding:0 5px 0 0;
+    margin-right: 4px;
+}
+
+/* 左侧内容第三行按钮 */
+
+.pd_but_box {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.pd_but_box a {
+    line-height: 31px;
+    height: 31px;
+    text-decoration: none;
+}
+
+.pd_but_box .but_play {
+    width: 60px;
+    background: url(../images/button2.png) 0 -633px;
+    padding-left: 33px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 13px;
+}
+
+.pd_but_box .but_add {
+    width: 31px;
+    background: url(../images/button2.png) 0 -1588px;
+    margin-right: 5px;
+}
+
+.pd_but_box .but_file,
+.pd_but_box .but_share,
+.pd_but_box .but_down,
+.pd_but_box .but_commt {
+    min-width: 23px;
+    padding: 0px 0px 0px 36px;
+}
+
+.pd_but_box .but_file {
+    background: url(../images/button2.png) 0 -977px;
+}
+
+
+/* 设置精灵图所缺的右边 */
+
+.but_file+b,
+.but_share+b,
+.but_down+b,
+.but_commt+b {
+    display: inline-block;
+    height: 31px;
+    padding-right: 5px;
+    background: url(../images/button2.png) right -1020px;
+    margin-right: 5px;
+}
+
+.pd_but_box .but_share {
+    background: url(../images/button2.png) 0 -1225px;
+}
+
+.pd_but_box .but_down {
+    background: url(../images/button2.png) 0 -2761px;
+}
+
+.pd_but_box .but_commt {
+    background: url(../images/button2.png) 0 -1465px;
+}
+
+
+
+/* 歌词文字样式 */
+.songwords{
+    font-size: 12px;
+    color:#333;
+    margin-top: 13px;
+    line-height: 23px;
+}
+.song_z{
+    font-size: 12px;
+    color: #333;
+    margin-top: 5px;
+}
+.song_z a{
+    text-decoration: none;
+    color:#0c73c2;
+}
+.song_z a:hover{text-decoration: underline;}
+.song_z b{
+    display: inline-block;
+    width: 11px;height:8px;
+    background: url(../images/icon.png) no-repeat -65px -520px;
+}
+.p_error,.p_w{
+    height:30px;
+    font-size: 12px;
+    text-align: right;
+}
+.p_error a{color:#999;}
+.p_w{color:#666;}
+.p_w a{color: #0c73c2;}
+/* 左侧底部 */
+.left_bottom{
+    width:640px;height:428px;
+    margin-top:290px;
+}
+.u-title{
+    width:640px;height:33px;
+    border-bottom: 2px solid #c20c0c;
+}
+.u-title span:first-child{font-size: 20px;line-height: 28px;color:#333;}
+.u-title span:last-child{font-size:12px;color:#666;margin:9px 0 0 20px;}
+/* 整个评论区 */
+.comment{
+    margin-top:20px;
+}
+/* 写评论区*/
+.m_write{
+    width:640px;height:90px;
+    margin-bottom: 20px;
+}
+.m_write img{
+    float:left;
+    width:50px;height:50px;
+    margin-right:10px;
+}
+.area{
+    width:564px;height:50px;
+    display: block;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    line-height: 19px;
+    resize: none;
+    overflow: auto;
+    font-size: 12px;
+    color: #333;
+    padding: 5px 6px 6px;
+    outline: none;
+}
+/* 写评论区的大于符号 */
+.corr{
+    width:30px;height:30px;
+    overflow: hidden;
+    position: relative;
+    top:-99px;
+    left:50px;
+}
+.corr span{
+    display: block;
+    width:16px;height:23px;
+    background: url(../images/commt_bg.png) no-repeat 0 0;
+}
+.btns{
+    padding-top: 10px;
+    padding-left:60px;
+    margin-top:-77px;
+}
+/* 评论表情 */
+.btns span:first-child{
+    display: inline-block;
+    width:18px;height:18px;
+    background: url(../images/icon.png) no-repeat -40px -490px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.btns span:nth-child(2){
+    display: inline-block;
+    width:18px;height:18px;
+    background: url(../images/icon.png) no-repeat -60px -490px;
+    cursor: pointer;
+}
+.btns span:last-child{
+    font-size:12px;
+    color:#999;
+    float: right;
+    margin-right: 10px;
+    line-height: 25px;
+    
+}
+/* 评论按钮 */
+.btns a{
+    float: right;;
+    width:46px;height:25px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 12px;
+    color:white;
+    text-decoration: none;
+    background: url(../images/button.png) no-repeat -84px -64px;
+}
+.btns a:hover{
+    background-position: -84px -94px;
+    color: #fff;
+    text-decoration: none;
+}
+/* 精彩评论 */
+.com_flag h3{
+    font-size: 12px;
+    color:#333;
+    height:20px;
+    border-bottom:1px solid #cfcfcf;
+    margin-top:30px;
+}
+/* 某个用户评论详情 */
+.com_detail{
+    width:640px;
+    padding:15px 0;
+    border-bottom: 1px dotted #cfcfcf;
+}
+.com_text{
+    font-size: 12px;
+    color: #333;
+    margin-left: 60px;
+    margin-top: -53px;
+}
+.com_text img{
+    display: inline-block;
+    width:26px;height:12px;
+}
+.com_text a{
+    color:#0c73c2;
+    text-decoration: none;
+}
+.com_text a:hover{text-decoration: underline;}
+
+/* 某条评论底部日期 */
+.rq{
+    display: flex;
+    justify-content: space-between;
+    margin:15px 0 0;
+}
+.time{color:#999;}
+/* 点赞手势 */
+.i-z{
+    display: inline-block;
+    width:15px;height:14px;
+    font-style: normal;
+    background: url(../images/icon2.png) no-repeat -150px 0;
+}
+.i-z:hover{background: url(../images/icon2.png) no-repeat -150px -20px;}
+.rq span{color: #ccc;}
+.rq a{color:#666;text-decoration: none;}
+/* 页码 */
+.page{
+    margin: 20px 107px;
+    list-style: none;
+}
+.page_item{
+    float: left;
+    height: 22px;
+    padding: 0 8px;
+    background-color: #fff;
+    line-height: 22px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    vertical-align: middle;
+    margin: 0 1px 0 2px; 
+}
+.page_item a{
+    color: #333;
+    text-decoration: none;
+}
+.page_item:hover{border:1px solid #333;}
+.page li:first-child,.page li:last-child{
+    background:url(../images/button.png) no-repeat -75px -560px;
+}
+.clear_both::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.right{
+    float:left;
+    padding:20px 30px 40px 20px;
+}
+/* 包含这首歌的歌单 */
+ul li{
+    list-style: none;
+}
+ul li a{text-decoration: none;}
+.related_commed{
+    margin-bottom: 25px;
+}
+.commed_item{
+    width: 200px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.commed_item a:hover{
+    text-decoration: underline;
+}
+.commed_title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    width:140px;
+}
+.commed_content p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.commed_title a{
+    display: inline-block;
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.commed_item div{
+    position: absolute;
+    top:0px;
+    left:60px;
+}
+.commed_content .user_name{
+    max-width: 106px;
+    margin: 0 2px 0 4px;
+    color: #333;
+}
+.right h4{
+    font-size: 12px;
+    color:#333;
+    height:20px;
+    border-bottom:1px solid #cfcfcf;
+    margin-bottom:30px;
+    padding-bottom: 3px;
+}
+.commit_star{
+    display: inline-block;
+    width: 12px;
+    height:13px;
+    background: url(../images/icon.png) no-repeat -65px -840px;
+}
+/* 相似歌曲 */
+.txt{
+    float: left;
+    width:156px;
+    line-height: 16px;
+}
+.btn-opr{
+    width:36px;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    margin-top: 12px;
+    
+}
+.li-ite{
+    margin-top: 10px;
+}
+.btn-opr a:first-child{
+    display: inline-block;
+    width:10px;height:11px;
+    background: url(../images/icon2.png) -69px -455px;
+}
+.btn-opr a:last-child{
+    display: inline-block;
+    width:10px;height:11px;
+    background: url(../images/icon2.png) -87px -454px;
+}
+.txt a{
+    color:#333;
+}
+.txt a:hover{
+    text-decoration: underline;
+}
+.txt div a{
+    color:#999;
+}
+.txt div a:hover{
+    text-decoration: underline;
+}
+.txt_hidden{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* 网易云多端 */
+.more_down a{
+    color: #999;
+    text-decoration: none;
+}
