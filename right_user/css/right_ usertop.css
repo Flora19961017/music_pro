@@ -420,6 +420,9 @@ i.bd-bg{
   height: 17px;
   background: url(../images/iconall.png) no-repeat 0 0;
 }
+.img_detail{
+  width: 140px;
+}
 .img_detail>a{
   font-size:14px; 
 }
