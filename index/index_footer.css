@@ -70,45 +70,45 @@
 }
 /*第一个图标*/
 .logo-auth{
-    background: url(../images/index/foot_enter.png) no-repeat;
+    background: url(./images/index/foot_enter.png) no-repeat;
     background-size: 110px 450px;
     background-position: -63px -101px;
 }
 .tt-auth{
-    background: url(../images/index/foot_enter_tt.png) no-repeat;
+    background: url(./images/index/foot_enter_tt.png) no-repeat;
     background-size:180px 100px;
     background-position: -1px -91px;
 }
 /*第二个图标*/
 .logo-musician{
-    background: url(../images/index/foot_enter.png) no-repeat;
+    background: url(./images/index/foot_enter.png) no-repeat;
     background-size:110px 450px;
     background-position: 0px 0px;
 }
 .tt-musician{
-    background: url(../images/index/foot_enter_tt.png) no-repeat;
+    background: url(./images/index/foot_enter_tt.png) no-repeat;
     background-size:180px 100px;
     background-position: 0px 0px;
 }
 /*第三个图标*/
 .logo-reward{
-    background: url(../images/index/foot_enter.png) no-repeat;
+    background: url(./images/index/foot_enter.png) no-repeat;
     background-size:110px 450px;
     background-position: -60px -50px;
 }
 .tt-reward{
-    background: url(../images/index/foot_enter_tt.png) no-repeat;
+    background: url(./images/index/foot_enter_tt.png) no-repeat;
     background-size:180px 100px;
     background-position: 0px -54px;
 }
 /*第四个图标*/
 .logo-cash{
-    background: url(../images/index/foot_enter.png) no-repeat;
+    background: url(./images/index/foot_enter.png) no-repeat;
     background-size:110px 450px;
     background-position: 0px -101px; 
 }
 .tt-cash{
-    background: url(../images/index/foot_enter_tt.png) no-repeat;
+    background: url(./images/index/foot_enter_tt.png) no-repeat;
     background-size:180px 100px;
     background-position: -1px -72px;
 }

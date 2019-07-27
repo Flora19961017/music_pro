@@ -49,14 +49,14 @@
      width: 28px;
      height: 19px;
      display: inline-block;
-     background: url(../images/index/topbar.png) no-repeat;
+     background: url(./images/index/topbar.png) no-repeat;
      background-position: -190px 0;
  }
  /* 登录按钮 */
  .top-login{
      float: right;
      height: 45px;
-     background: url(../images/index/topbar.png) no-repeat right -47px;
+     background: url(./images/index/topbar.png) no-repeat right -47px;
      margin: 19px 0 0 20px;
      padding: 0 22px 0 0;
  }
@@ -92,7 +92,7 @@
      height: 32px;
      line-height: 32px;
      margin-top: 19px;
-     background: url(../images/index/topbar.png) no-repeat;
+     background: url(./images/index/topbar.png) no-repeat;
      background-position: 0 -99px;
      background-color: #fff;
      border-radius: 32px;
