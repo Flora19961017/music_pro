@@ -424,12 +424,9 @@ i.bd-bg{
   height: 17px;
   background: url(../images/iconall.png) no-repeat 0 0;
 }
-<<<<<<< HEAD
-=======
 .img_detail{
   width: 140px;
 }
->>>>>>> 6618509fd23bebfb7c60c0d74cac2d54f01980f1
 .img_detail>a{
   font-size:14px; 
 }
