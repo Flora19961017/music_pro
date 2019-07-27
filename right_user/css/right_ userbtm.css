@@ -1,0 +1,562 @@
+/*人物介绍的样式*/
+/*人物图片部分*/
+body{
+    font-size: 12px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-size-adjust: none;
+}
+dd,dt{
+    margin:0;
+    padding: 0;
+}
+.g-bd{
+    width: 980px;
+    min-height: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    border-width: 0 1px;
+}
+.g-bd>.g-wrap{
+    padding: 40px;
+}
+.g-bd>.g-wrap>.m-proifo{
+    margin-bottom: 43px;
+}
+.m-proifo::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.g-bd>.g-wrap>.m-proifo>dt{
+    float: left;
+    width: 188px;
+    margin-right: 40px;
+}
+.g-bd>.g-wrap>.m-proifo>.f-pr{
+    position: relative;
+    zoom: 1;
+}
+.g-bd>.g-wrap>.m-proifo>.f-pr>img{
+    display: block;
+    width: 180px;
+    height:180px;
+    padding: 3px;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+}
+.g-bd>.g-wrap>.m-proifo>dd{
+    float: left;
+    width: 670px;
+}
+.g-bd>.g-wrap>.m-proifo>dd>.name{
+    padding-bottom:12px;
+    margin-bottom:10px;
+    border-bottom: 1px solid #ddd;  
+}
+.g-bd>.g-wrap>.m-proifo>dd>.name>.f-cb>.wrap{
+    padding-bottom:3px; 
+}
+.g-bd>.g-wrap>.m-proifo>dd>.name>.f-cb>.f-fl{
+    float: left;
+}
+.g-bd>.g-wrap>.m-proifo>dd>.name>::after{
+    display: block;
+    content: ".";
+    clear: both;
+    height: 0px;
+    visibility: hidden;
+}
+.g-bd>.g-wrap>.m-proifo>dd>.name>.f-cb>.f-fl>.tit{
+    float: left;
+    margin-top:3px;
+    font-size:18px;
+    font-weight: normal;
+    line-height: 30px; 
+}
+.g-bd>.g-wrap>.m-proifo>dd>.name>.f-cb>.f-fl>.s-fc0{
+    color: #000;
+}
+.g-bd>.g-wrap>.m-proifo>dd>.name>.f-cb>.f-fl>.f-thide{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.g-bd>.g-wrap>.m-proifo>dd>.name>.f-cb>.f-fl>.f-ff2{
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+}
+.g-bd>.g-wrap>.m-proifo>dd>.name>.f-cb>.f-fl>.vip-code-230{
+    width: 38px;
+    height: 36px;
+    background-image:url(../images/DjfcGsYjT1HqrIQk9YdV7Q==_109.png);
+    background-size:100% 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left; 
+    margin-left: 10px;
+}
+.g-bd>.g-wrap>.m-proifo>dd>.name>.f-cb>.f-fl>.lev{
+    float: left;
+    margin: 8px 0 0 10px;
+}
+.g-bd>.g-wrap>.m-proifo>dd>.name>.f-cb>.f-fl>.u-lev{
+    display: inline-block;
+    height: 19px;
+    overflow: hidden;
+    padding-left: 29px;
+    line-height: 21px;
+    color: #e03a24;
+    font-size: 14px;
+    font-weight: bold;
+    font-style:italic;
+}
+.u-icn2{
+    background: url(../images/icon2.png) no-repeat 0 9999px ;
+}
+.g-bd>.g-wrap>.m-proifo>dd>.name>.f-cb>.f-fl>.u-icn2-lev{
+    background-position: -135px -190px;   
+}
+.g-bd>.g-wrap>.m-proifo>dd>.name>.f-cb>.f-fl>.u-icn2-lev i{
+    float: right;
+}
+i.u-icn2-levr{
+    width: 9px;
+    height: 19px;
+    background-position:-191px -190px; 
+}
+.u-icn, .u-icn2, .u-icn3{
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.m-proifo .name .u-icn-01{
+    margin-top: 9px;
+}
+.m-proifo .name .u-icn-01{
+    width: 20px;
+    height: 20px;
+    background-position:-41px -57px; 
+}
+.m-proifo .name .u-icn{
+    float: left;
+    margin:9px 0 0 8px;
+}
+.u-icn{
+    background: url(../images/icon.png) no-repeat 0 9999px;
+}
+.m-proifo .name .btn{
+    float: left;
+    margin:4px 0 0 15px;
+}
+.u-btn{
+    display: inline-block;
+}
+.btn{
+    background: url(../images/button.png) no-repeat 0 9999px;
+}
+.u-btn-7{
+    width: 75px;
+    height: 31px;
+    background-position:0 -810px; 
+}
+.f-tdn{
+    text-decoration: none;
+}
+.u-btn-7  i{
+    display: inline-block;
+    height: 29px;
+    line-height: 29px;
+    padding-left: 30px;
+}
+#head-oper{
+    float: left;
+    margin: 14.94px 0;
+}
+.m-proifo .name .btn{
+    float: left;
+    margin: 4px 0 0 15px;
+}
+.u-btn-6{
+    width: 70px;
+    height: 31px;
+    background-position: 0 -919px;
+}
+.u-btn-5{
+    width: 81px;
+    height: 31px;
+    background-position: 0 -955px;
+}
+.u-btn-8{
+    width: 40px;
+    height: 31px;
+    padding-left: 30px;
+    background-position: 0 -720px;
+    color: #fff;
+    line-height: 30px;
+}
+.f-cb::after{
+    content: "";
+    clear: both;
+    display: block;
+    height: 0px;
+    visibility: hidden;
+}
+.m-proifo .name .djp:first-of-type{
+    margin: 8px;
+}
+.s-fc3{
+    color: #666;
+}
+.f-fs1{
+    font-size: 14px;
+}
+.m-proifo .name .tag{
+    margin-right: 6px;
+    float: left;
+}
+
+.u-icn2-pfv{
+    width: 68px;
+    height: 20px;
+    background-position: 0 -480px;
+}
+.m-proifo .data{
+    height: 41px;
+    margin-bottom:15px; 
+}
+.m-proifo .data .fst{
+    padding-left: 0;
+    border-left: none;
+}
+.m-proifo .data li{
+    float: left;
+    padding: 0 40px 0 20px;
+    list-style: none;
+    border-left: 1px solid #ddd;
+}
+.m-proifo .data li a{
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    color: #666;
+    text-decoration:none;
+}
+.m-proifo .data strong{
+    display: block;
+    margin-top: -4px;
+    font-size:24px;
+    font-weight: normal;
+    cursor: pointer; 
+}
+.m-proifo .data span{
+    display: block;
+    text-indent: 2px;
+    cursor: pointer;
+}
+.m-proifo .inf{
+    margin-bottom: 5px;
+    line-height: 21px;
+}
+.f-brk{
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
+.u-title-1{
+    height: 33px;
+}
+.u-title{
+    border-bottom: 2px solid #c20c0c;
+}
+.u-title-1 h3{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 28px;
+}
+.f-ff2{
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+}
+.m-create{
+    margin-bottom: 24px;
+    border:1px solid #e5e5e5;
+    border-top:none;
+    padding-left: 12px;
+}
+.m-create li{
+    list-style: none;
+}
+.m-create .itm{
+    height: 50px;
+    padding: 10px 0;
+    line-height: 50px;
+}
+.m-plylist .itm{
+    float: left;
+    width: 100%;
+    background: #fff;
+}
+.m-plylist .itm:hover{
+    background-color:#e8e8e8; 
+}
+.m-create .cnt{
+    width: 500px;
+    padding-right: 38px;
+}
+.m-create .cnt .hshow{
+    display: none;
+}
+.itm:hover .hshow {
+    display: block;
+}
+.m-create .cnt .opt .icn{
+    float:right;
+    margin-right:10px;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+.u-icn2-share{
+    width: 16px;
+    height: 14px;
+    background-position: -90px 0;
+}
+.m-create .cnt .opt{
+    position: absolute;
+    top:50%;
+    right:0;
+    margin-top:-6px;
+}
+.f-pr{
+    position: relative;
+    zoom: 1;
+}
+.m-plylist .col{
+    float: left;
+    margin-left:10px;
+}
+.s-fc1{
+    color:#333;
+    text-decoration: none;
+}
+.s-fc1:hover{
+    text-decoration:underline;
+}
+.m-create .col-3{
+    width: 213px;
+}
+.m-plylist .col{
+    float: left;
+    margin-left:10px;
+}
+.m-create .col-4{
+    width: 44px;
+}
+.s-fc4{
+    color: #999;
+}
+.m-plylist .bg{
+    background: #f7f7f7;
+}
+.u-title-1{
+    height: 33px;
+}
+
+.u-title-1 h3{
+    font-size:20px;
+    line-height: 28px;
+}
+.u-title h3{
+    font-weight: normal;
+    float: left;
+    margin:0;
+}
+.m-rctten{
+    margin-bottom: 36px;
+    border:1px solid #e2e2e2;
+    border-width: 0 0 1px 1px;
+}
+.m-record-title{
+    position: relative;
+    z-index: 2;
+    zoom: 1;
+}
+.m-record-title h4{
+    float: left;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #666;
+}
+.n-iconpoint{
+    position: relative;
+    margin-left: 10px;
+    left:-1px;
+    top:8px;
+    line-height: 18px;
+    z-index: 2;
+}
+.u-icn2-5{
+    width: 18px;
+    height: 18px;
+    background-position: 0 -50px;
+}
+.n-iconpoint div.tip{
+    position: absolute;
+    left:-33px;
+    top: 30px;
+    /*感叹号点击事件*/
+     display: none;
+    width:295px;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 8px 19px 7px 19px;
+    z-index: 2;
+    color: #666;
+}
+.n-iconpoint div.tip{
+    background: url(../images/top_m.png);
+}
+.n-iconpoint div.tip i.t{
+    position: absolute;
+    width: 327px;
+    height: 16px;
+    left: 0;
+    top:-16px;
+}
+.n-iconpoint div.tip i.t{
+    background: url(../images/top_t.png) 0 0 no-repeat;
+}
+.n-iconpoint div.tip i.b{
+    position: absolute;
+    width: 327px;
+    height: 12px;
+    left: 0;
+    bottom: -12px;
+}
+.n-iconpoint div.tip i.b{
+    background: url(../images/top_b.png) 0 0 no-repeat;
+}
+.m-record-title .nav{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 5px;
+}
+.m-record-title .nav span.z-sel{
+    color:#333;
+    font-weight: 700;
+}
+.m-record-title .nav span{
+    line-height: 26px;
+    cursor: pointer;
+    margin-left:8px;
+}
+.m-record-title .nav i{
+    width: 1px;
+    height: 12px;
+    margin-top:7px;
+    background-color:#999; 
+}
+/* 歌单*/
+.m-record{
+    margin-bottom: 36px;
+}
+.m-record ul{
+    border:1px solid #e2e2e2;
+    border-top: none;
+    list-style: none;
+}
+.m-record li{
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+}
+.m-record li .hd{
+    float: left;
+    width: 72px;
+    height: 38px;
+    overflow: hidden;
+}
+.m-record .ply{
+    float: right;
+    margin-top:10px;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    background-position:0px -103px; 
+}
+ .ply{
+    background:url(../images/table.png) 0 9999px;
+}
+.m-record li .hd .num{
+    float: left;
+    padding-left: 5px;
+    padding-right: 8px;
+    width: 37px;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    color: #666;
+}
+.m-record li .song{
+    float: left;
+    position: relative;
+    z-index: 1;
+    zoom: 1;
+    padding-left: 10px;
+    width: 480px;
+    height: 38px;
+    overflow: hidden;
+}
+.m-record li .song .tt{
+    float: left;
+    width: 100%;
+}
+.m-record li .song .tt .txt{
+    position: relative;
+    display: inline-block;
+    max-width: 99%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.m-record li .song .tt .txt .a_color{
+    color: #333;
+    text-decoration: none;
+}
+.m-record li .song .tt .txt .a_color:hover{
+    text-decoration: underline;
+}
+.s-fc8{
+    color: #aeaeae;
+    text-decoration: none;
+}
+.m-record li .song .tt .ar em{
+    margin:0 5px;
+}
+.m-record .icn-add{
+    float: left;
+    margin-top: 2px;
+}
+.u-icn-81{
+    width: 13px;
+    height: 13px;
+    background-position: 0 -700px;
+}
+.m-record span.icn-share{
+    background-position: 0 -195px;
+}
+.m-record span .icn{
+    float: left;
+    width: 18px;
+    height: 16px;
+    margin:2px 0 0 8px;
+    overflow: hidden;
+    text-indent: -999px;
+    cursor: pointer;
+}

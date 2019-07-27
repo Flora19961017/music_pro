@@ -1,0 +1,389 @@
+/* 自动隐藏多余部分 */
+.f_thide{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+/* 清除浮动 */
+.clear_both::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+dl,dt,dd{
+  padding: 0px;
+  margin: 0px;
+}
+.fl{
+  float:left;
+}
+.fr{
+  float: right;
+}
+/*设置主体页面包含右侧边宽度*/
+section{
+  width:981px;
+  margin: 0 auto;
+  background: #fff;
+  border-right:1px solid #eee; 
+}
+/*设置主要页面，除右侧边栏*/
+#main_part{
+  width:689px;
+  border: 1px solid #eee;
+  padding:20px;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+ul,p{
+  padding: 0px;
+  margin: 0px;
+}
+.title_nav{
+  height: 33px;
+  border-bottom: 2px solid #C10D0C;
+  line-height: 33px;
+  padding-right: 10px;
+}
+/*设置小红圈*/
+.red_circle{
+  float: left;
+  width: 32px;
+  height: 33px;
+  background: url("../images/index/index.png") no-repeat -225px -153px;
+}
+.nav_title{
+  float: left;
+  margin-right: 20px;
+  font-size: 20px;
+}
+.title_nav a{
+  color:#333;
+  font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+}
+#hot ul.hot_ul{
+  float: left;
+  font-size: 12px;
+  color: #333;
+}
+/*清除li的浮动*/
+#hot ul:after{
+  content:"";
+  display: block;
+  clear:both;
+}
+#hot ul li{
+  float:left;
+  list-style: none;
+}
+/*设置热门推荐“|”*/
+.line + .line::before{
+  content:"|";
+  margin: 0px 10px;
+}
+.hot_ul a:hover,.hot_more a:hover{
+  text-decoration: underline;
+}
+.title_more{
+  float: right;
+  font-size: 12px;
+}
+.more_arrow{
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 4px;
+  vertical-align: middle;
+  background: url("../images/index/index.png") no-repeat 0px -242px;
+}
+/*设置热点主体每个图片部分内容*/
+.hot_main{
+  padding: 20px 0px;
+}
+#hot >.hot_main>li{
+  width:140px;
+  height: 204px;
+  float: left;
+  padding-left: 42px;
+  padding-bottom: 30px;
+  position: relative;
+}
+#hot >.hot_main>li.hot_first_li{
+  padding-left: 0px;
+}
+#hot >.hot_main>li>a>img{
+  border: 1px solid #eee;
+}
+/*设置热点主体中文字部分*/
+.hot_main p a{
+  font-size: 14px;
+  line-height: 20px;
+}
+.hot_main p a:hover{
+  text-decoration: underline;
+}
+.hot_main p:before{
+  content: "";
+  display: table;
+}
+/*设置热点主体电台节目*/
+.hot_main .hot_diantai{
+  display: inline-block;
+  width: 42px;
+  height: 18px;
+  background: url("../images/index/icon.png") no-repeat -30px -655px;
+  margin-top: 2px;
+}
+/*设置图片上的灰色部分*/
+.hot_li_bottom{
+  height: 27px;
+  width: 140px;
+  background: url("../images/index/coverall.png") no-repeat 0 -537px;
+  position: absolute;
+  top:114px;
+  left: 43px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #ccc;
+  padding:9px 5px;
+  box-sizing: border-box;
+}
+#hot >.hot_main>li.hot_first_li .hot_li_bottom,#hot >.hot_main>li.hot_first_li .hot_li_bottom{
+  left: 1px;
+}
+/*设置图片上灰色部分的耳机*/
+.hot_earphone{
+  display: inline-block;
+  width: 14px;
+  height: 11px;
+  background: url("../images/index/iconall.png") no-repeat 0 -23px;
+  margin-right: 5px;
+}
+/*设置图片上灰色播放键*/
+.hot_play{
+  position: absolute;
+  right: 10px;
+  bottom: 4px;
+  width: 16px;
+  height: 17px;
+  background: url("../images/index/iconall.png") no-repeat 0 0px;
+}
+.hot_play:hover{
+  background-position: 0px -60px;
+}
+/* 新碟部分 */
+.n_main_box{
+  margin: 20px 0 37px 0;
+}
+.n_main_inner{
+  width: 669px;
+  height: 184px;
+  padding-left: 16px;
+  background: #f5f5f5;
+  border: 1px solid #fff;
+  position: relative;
+}
+.n_main_roll{
+  position: relative;
+  float: left;
+  width: 645px;
+  height: 180px;
+  overflow: hidden;
+}
+.n_main_inner ul{
+  width: 645px;
+  margin: 28px 0 0 0;
+  position: absolute;
+  top: 0px;
+}
+.n_main_inner li{
+  float: left;
+  width: 118px;
+  height: 150px;
+  margin-left: 11px;
+}
+.img_box{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-bottom: 7px;
+}
+.n_main_roll p a:hover{
+  text-decoration: underline;
+}
+.img_mask{
+  display: inline-block;
+  width: 118px;
+  height: 100px;
+  background: url(../images/index/coverall.png) no-repeat 0 -570px;
+}
+/* 图片播放按钮 */
+.n_img_play{
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: url(../images/index/iconall.png) no-repeat 0 -85px;
+  bottom: 5px;
+  right: 10px;
+  display: none;
+}
+.img_box:hover .n_img_play{
+  display: block;
+}
+.new_detail,.new_author{
+  width: 90%;
+  line-height: 18px;
+}
+.new_detail a{
+  color: #000;
+}
+.new_author a{
+  color:#666;
+}
+/* 左右箭头 */
+.n_main_inner>a{
+  position: absolute;
+  top: 71px;
+  left: 0px;
+  width: 17px;
+  height: 17px;
+  background: url(../images/index/index.png) no-repeat 0 9999px;
+}
+.n_main_inner>.left_arrow{
+  background-position: -260px -75px;
+}
+.n_main_inner>.left_arrow:hover{
+  background-position: -280px -75px;
+}
+.n_main_inner>.right_arrow{
+  left: 665px;
+  background-position: -300px -75px;
+}
+.n_main_inner>.right_arrow:hover{
+  background-position: -320px -75px;
+}
+/* 榜单部分 */
+.r_main_box{
+  height: 472px;
+  margin-top: 20px;
+  background: url(../images/index/index_bill.png) no-repeat;
+}
+.r_inner_box{
+  float: left;
+  width: 230px;
+}
+.r_inner_box:last-child{
+  width: 229px;
+}
+.r_top_title{
+  padding: 20px 0 0 19px;
+}
+.r_img_box{
+  width: 80px;
+  height: 80px;
+}
+.r_img_box img{
+  width: 100%;
+  height: 100%;
+}
+.r_title_box{
+  width: 116px;
+  height: 96px;
+  margin: 6px 0 0 10px;
+}
+.r_btn_box{
+  margin-top: 10px;
+}
+.r_btn_box>a{
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  background: url(../images/index/index.png) no-repeat 0 9999px;
+}
+.r_btn_box .r_t_play{
+  background-position: -267px -205px;
+}
+.r_btn_box .r_t_play:hover{
+  background-position: -267px -235px;
+}
+.r_btn_box .r_t_like{
+  background-position: -300px -205px;
+}
+.r_btn_box .r_t_like:hover{
+  background-position: -300px -235px;
+}
+/* 榜单歌曲部分 */
+.r_song li{
+  height: 32px;
+  line-height: 32px;
+  position: relative;
+}
+.r_num{
+  width: 35px;
+  height: 32px;
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+}
+.r_num_top{
+  color:#c10d0c;
+}
+.r_song_name{
+  width: 170px;
+}
+.r_song_name>a{
+  display: inline-block;
+  width: 170px;
+}
+.r_song_name>a:hover,.r_song_more>a:hover{
+  text-decoration: underline;
+}
+.r_song li:hover .r_song_name{
+  width:100px;
+}
+.r_song_btn{
+  position: absolute;
+  right: 5px;
+  top: 8px;
+  display: none;
+}
+.r_song li:hover .r_song_btn{
+  display: block;
+}
+.r_song_btn>a{
+  float: left;
+  width: 17px;
+  height: 17px;
+  margin-right: 10px;
+  background: url(../images/index/index.png) no-repeat 0 9999px;
+}
+.r_song_btn .r_s_play{
+  background-position: -267px -268px;
+}
+.r_song_btn .r_s_play:hover{
+  background-position: -267px -288px;
+}
+.r_song_btn .r_s_like{
+  background-position: -297px -268px;
+}
+.r_song_btn .r_s_like:hover{
+  background-position: -297px -288px;
+}
+.r_song_btn .r_s_add{
+  background: url(../images/index/icon.png) no-repeat 0 -699px
+}
+.r_song_btn .r_s_add:hover{
+  background-position:-22px -699px;
+}
+.r_song_more{
+  text-align: right;
+  margin-right:20px; 
+}
+.r_song_more>a{
+  display: inline-block;
+  width: 100%;
+}
