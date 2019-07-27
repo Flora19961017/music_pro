@@ -176,7 +176,7 @@ i.u-icn2-levr{
 }
 .m-proifo .name .btn{
     float: left;
-    margin: 4px 0 0 15px;
+    margin: -14px 0 0 15px;
 }
 .u-btn-6{
     width: 70px;
@@ -444,7 +444,6 @@ i.u-icn2-levr{
     z-index: 1;
     right: 0;
     bottom: 5px;
-<<<<<<< HEAD
 }
 .m-record-title .nav span.z-sel{
     color:#333;
@@ -560,6 +559,287 @@ i.u-icn2-levr{
     overflow: hidden;
     text-indent: -999px;
     cursor: pointer;
-=======
->>>>>>> 6618509fd23bebfb7c60c0d74cac2d54f01980f1
 }
+
+
+/* 听歌排行榜 */
+.innr_container{
+    margin-bottom: 36px;
+  }
+   
+/* 排行榜标题 */
+.l_r_title{
+    border-bottom: 2px solid #e03a24;
+  }
+  .l_r_title>span{
+    margin-left: 10px;
+    margin-top: 9px; 
+  }
+  .l_r_title>h1{
+    font-size: 20px;
+    color: #666;
+    font-weight: normal;
+  }
+
+  /* 标题i图标 */
+.i_img{
+    position: relative;
+    width: 18px;
+    height: 18px;
+  }
+  .i_img>a{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: url(../images/icon2.png) no-repeat 0 -50px;
+  }  
+  .i_img>p{
+    position: absolute;
+    left: -33px;
+    top: 24px;
+    display: none;
+    width: 295px;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 8px 19px 7px 19px;
+    color: #666;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    background: #fff;
+  }
+  /* 小三角 */
+  i.bd-br{
+    font-size: 20px;
+    position: absolute;
+    color: #ddd;
+    top: -11px;
+    left: 35px;
+  }
+  i.bd-bg{
+    font-size: 20px;
+    position: absolute;
+    color: #fff;
+    top: -9px;
+    left: 35px;
+  }
+  .i_img:hover .tips{
+    display: block;
+  }
+
+  /* 选择时间 */
+.chose_time>li+li::after{
+    content: "|";
+    display: inline-block;
+    padding-right: 6px;
+    padding-left: 3px;
+  }
+  .chose_time .active{
+    font-weight: bold;
+  }
+
+  /* 歌曲列表主体内容 */
+.l_r_innr_box{
+    border: 1px solid #e2e2e2;
+    border-top: none;
+  }
+  .innr_item{
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+  }
+  .innr_item:nth-of-type(even){
+    background: #f7f7f7;
+  }
+  .innr_item:hover{
+    background: #eee;
+  }
+    /* 排名 */
+  .innr_item .hd{
+    width: 72px;
+    height: 38px;
+    overflow: hidden;
+  }
+      /* 排名数字 */
+  .innr_item .innr_num{
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 8px;
+    width: 37px;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    color: #666;
+  }
+      /* 播放按钮 */
+  .innr_item .innr_play{
+    float: right;
+    margin-top: 10px;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    background: url(../images/table.png) no-repeat 0 -103px;
+  }
+    /* 歌曲内容 */
+  .innr_item .songs{
+    padding-left: 10px;
+    width: 480px;
+    height: 38px;
+    overflow: hidden;
+  }
+      /* 歌名 */
+  .innr_item .songs_a{
+    color: #333;
+    font-weight: bold;
+  }
+  .innr_item a:hover{
+    text-decoration: underline;
+  }
+  .innr_item .ss_singer{
+    color: #aeaeae;
+  }
+  .innr_item .ss_singer>em{
+    padding: 0px 5px;
+  }
+  .innr_item .singer_name{
+    color: #aeaeae;
+  }
+      /* 按钮 */
+  /* lihover的时候，出现按钮 */
+  .innr_item:hover .btn_box{
+    display: block;
+  }
+  .btn_box{
+    display: none;
+  }
+  .btn_box>a {
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+    vertical-align: middle;
+  } 
+  .s_add {
+    background: url(../images/icon.png) no-repeat 0 -700px;
+  }
+  .s_add:hover {
+    background: url(../images/icon.png) no-repeat -22px -700px;
+  }
+  .s_like {
+    background: url(../images/table.png) no-repeat 0 -174px;
+  }
+  .s_like:hover {
+    background: url(../images/table.png) no-repeat -20px -174px;
+  }
+  .s_share {
+    background: url(../images/table.png) no-repeat 0 -195px;
+  }
+  .s_share:hover {
+    background: url(../images/table.png) no-repeat -20px -195px;
+  }
+  .s_down {
+    background: url(../images/table.png) no-repeat -81px -174px;
+  }
+  .s_down:hover {
+    background: url(../images/table.png) no-repeat -104px -174px;
+  }
+    /* 热度 */
+  .innr_item .tops{
+    width: 319px;
+    height: 38px;
+    line-height: 38px;
+  }
+  .innr_item .tops_bg{
+    display: inline-block;
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    background: #4eb4f5;
+    opacity: 0.1;
+  }
+  .innr_more{
+    height: 32px;
+    line-height: 32px;
+    text-align: right;
+  }
+  .innr_more>a:hover{
+    text-decoration: underline;
+  }
+
+  /* 创建的歌单 */
+/* 标题 */
+.cl_title{
+    border-bottom: 2px solid #e03a24;
+    position: relative;
+}
+  /* 标题字体 */
+  .cl_title>h1{
+    font-size: 20px;
+    line-height: 28px;
+    color: #333;
+    font-weight: normal;
+  }
+
+   /* 图标 */
+.r_img{
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    top: 0px;
+    background-size: cover;
+    background-image:url(../images/black-r-icon@3x.png) 
+  }
+    /* 歌单内容 */
+  .cl_inner{
+    margin-top: 20px;
+  }
+  .inner_item:not(:first-child){
+    width: 140px;
+    padding: 0 0 30px 50px;
+  }
+  .it_img_box{
+    position: relative;
+    line-height: 27px;
+  }
+  .img_btm{
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    width: 140px;
+    height: 27px;
+    background: url(../images/coverall.png) no-repeat 0 -537px;
+    color: #ccc;
+  }
+  .it_img_box .erji{
+    width: 14px;
+    height: 11px;
+    background: url(../images/iconall.png) no-repeat 0 -24px;
+    margin: 9px 5px 9px 10px;
+  }
+  .i_play{
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    width: 16px;
+    height: 17px;
+    background: url(../images/iconall.png) no-repeat 0 0;
+  }
+  .img_detail{
+    width: 140px;
+  }
+  .img_detail>a{
+    font-size:14px; 
+  }
+  .img_detail>a:hover{
+    text-decoration: underline;
+  }
+  .mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 140px;
+    background: url(../images/coverall.png) no-repeat 0 0;
+  }
+  
