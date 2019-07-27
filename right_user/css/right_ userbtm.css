@@ -444,4 +444,122 @@ i.u-icn2-levr{
     z-index: 1;
     right: 0;
     bottom: 5px;
+<<<<<<< HEAD
+}
+.m-record-title .nav span.z-sel{
+    color:#333;
+    font-weight: 700;
+}
+.m-record-title .nav span{
+    line-height: 26px;
+    cursor: pointer;
+    margin-left:8px;
+}
+.m-record-title .nav i{
+    width: 1px;
+    height: 12px;
+    margin-top:7px;
+    background-color:#999; 
+}
+/* 歌单*/
+.m-record{
+    margin-bottom: 36px;
+}
+.m-record ul{
+    border:1px solid #e2e2e2;
+    border-top: none;
+    list-style: none;
+}
+.m-record li{
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+}
+.m-record li .hd{
+    float: left;
+    width: 72px;
+    height: 38px;
+    overflow: hidden;
+}
+.m-record .ply{
+    float: right;
+    margin-top:10px;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    background-position:0px -103px; 
+}
+ .ply{
+    background:url(../images/table.png) 0 9999px;
+}
+.m-record li .hd .num{
+    float: left;
+    padding-left: 5px;
+    padding-right: 8px;
+    width: 37px;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    color: #666;
+}
+.m-record li .song{
+    float: left;
+    position: relative;
+    z-index: 1;
+    zoom: 1;
+    padding-left: 10px;
+    width: 480px;
+    height: 38px;
+    overflow: hidden;
+}
+.m-record li .song .tt{
+    float: left;
+    width: 100%;
+}
+.m-record li .song .tt .txt{
+    position: relative;
+    display: inline-block;
+    max-width: 99%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.m-record li .song .tt .txt .a_color{
+    color: #333;
+    text-decoration: none;
+}
+.m-record li .song .tt .txt .a_color:hover{
+    text-decoration: underline;
+}
+.s-fc8{
+    color: #aeaeae;
+    text-decoration: none;
+}
+.m-record li .song .tt .ar em{
+    margin:0 5px;
+}
+.m-record .icn-add{
+    float: left;
+    margin-top: 2px;
+}
+.u-icn-81{
+    width: 13px;
+    height: 13px;
+    background-position: 0 -700px;
+}
+.m-record span.icn-share{
+    background-position: 0 -195px;
+}
+.m-record span .icn{
+    float: left;
+    width: 18px;
+    height: 16px;
+    margin:2px 0 0 8px;
+    overflow: hidden;
+    text-indent: -999px;
+    cursor: pointer;
+=======
+>>>>>>> 6618509fd23bebfb7c60c0d74cac2d54f01980f1
 }
