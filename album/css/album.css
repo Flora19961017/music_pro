@@ -1,0 +1,643 @@
+.main{
+    width: 981px;
+    margin: 0 auto;
+    background: #fff;
+    border-left: 1px solid #d3d3d3;
+    border-right:1px solid #d3d3d3;
+}
+/* 左边部分 */
+.left{
+    width: 709px;
+    box-sizing: border-box;
+    padding: 47px 30px 40px 39px;
+    border-right:1px solid #d3d3d3;
+}
+/* 专辑封面图 */
+.cover_sprite{
+    display: inline-block;
+    width: 209px;
+    height: 177px;
+    background: url(../images/coverall.png) no-repeat 0 -986px;
+    top:0;
+    left: 0;
+}
+/* 专辑标题，发行时间、公司等 */
+.info{
+    width:410px;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 40px; 
+}
+/* 专辑图标 */
+.icn{
+    display: inline-block;
+    width: 54px;
+    height: 24px;
+    background: url(../images/icon.png) no-repeat 0 -186px;
+}
+.title{
+    margin-bottom: 12px;
+}
+.info_title{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.info p{
+    height: 18px;
+    line-height: 18px;
+    margin-top: 4px;
+    color: #666;
+}
+.info p>a{
+    color: #0c73c2;
+}
+.info p>a:hover{
+    text-decoration: underline;
+}
+.info_detail{
+    margin-bottom: 20px;
+}
+/* 横排按钮 */
+.pd_but_box {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.pd_but_box a {
+    line-height: 31px;
+    height: 31px;
+}
+
+.pd_but_box .but_play {
+    width: 60px;
+    background: url(../images/button2.png) 0 -633px;
+    padding-left: 33px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 13px;
+}
+
+.pd_but_box .but_add {
+    width: 31px;
+    background: url(../images/button2.png) 0 -1588px;
+    margin-right: 5px;
+}
+
+.pd_but_box .but_file,
+.pd_but_box .but_share,
+.pd_but_box .but_down,
+.pd_but_box .but_commt {
+    min-width: 23px;
+    padding: 0px 0px 0px 27px;
+}
+
+.pd_but_box .but_file {
+    background: url(../images/button2.png) 0 -977px;
+}
+
+
+/* 设置精灵图所缺的右边 */
+
+.but_file+b,
+.but_share+b,
+.but_down+b,
+.but_commt+b {
+    display: inline-block;
+    height: 31px;
+    padding-right: 5px;
+    background: url(../images/button2.png) right -1020px;
+    margin-right: 5px;
+}
+
+.pd_but_box .but_share {
+    background: url(../images/button2.png) 0 -1225px;
+}
+
+.pd_but_box .but_down {
+    background: url(../images/button2.png) 0 -2761px;
+}
+
+.pd_but_box .but_commt {
+    background: url(../images/button2.png) 0 -1465px;
+}
+
+/* 专辑介绍 */
+.cd_intr{
+    width:100%;
+    margin-top: 20px;
+}
+.cd_intr h3{
+    font-size: 12px;
+    color: #333;
+}
+.cd_intr p{
+    color: #666;
+    text-indent: 2em;
+    line-height: 24px;
+    margin-top: 4px;
+}
+/* 歌曲表格 */
+.songtb{
+    margin-top: 27px;
+}
+/* 包含歌曲列表 */
+.tb_tit span:first-child{
+    line-height: 28px;
+    font-size: 20px;
+    color: #333;
+}
+/* 2首歌 */
+.tb_tit span:nth-child(2){
+    color: #666;
+    margin: 9px 0 0 20px;
+}
+/* 生成外链播放器 */
+.icn_play{
+    width: 16px;
+    height: 16px;
+    background: url(../images/icon.png) no-repeat -34px -863px;
+    vertical-align: middle;
+}
+.play,.play:hover{
+    color: #4996d1;
+    text-decoration: underline;
+}
+.tb_tit{
+    border-bottom: 2px solid #c20c0c;
+}
+/* 歌单主体部分 */
+.mic_table {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-spacing: 0;
+}
+/* 设置表格标题 */
+.mic_table th {
+    height: 35px;
+    line-height: 34px;
+    background: url(../images/table.png) 0 0;
+    color: #666;
+    text-align: left;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.mic_table th span {
+    display: inline-block;
+    height: 35px;
+    width: 100%;
+    background: url(../images/table.png) no-repeat 0 -56px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.mic_table th:first-child {
+    background: url(../images/table.png) no-repeat 0 0;
+}
+/* 设置表格主体 */
+
+.mic_table td {
+    padding: 6px 10px;
+    line-height: 19px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* 设置表格隔行变色 */
+
+.mic_table tr:nth-child(odd) {
+    background: #f7f7f7;
+}
+
+
+/* 设置序号样式  */
+
+.mic_table .sort {
+    color: #999;
+}
+/* 设置时长样式*/
+.tab_time{
+    color: #666;
+}
+/* 设置歌曲名称和歌手鼠标悬停出现下划线 */
+.td_2>a:hover{
+    text-decoration: underline;
+}
+.mic_table .tab_play {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../images/table.png) no-repeat 0 -103px;
+    float: right;
+}
+
+.mic_table .tab_play:hover {
+    background: url(../images/table.png) no-repeat 0 -128px;
+}
+
+.mic_table a {
+    color: #333;
+}
+/* 第二列 */
+
+.mic_table tbody td:nth-child(2) {
+    width: 240px;
+    height:20px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.mic_table .tab_muc_detail {
+    font-weight: normal;
+    color: #aeaeae;
+}
+
+.mic_table .tab_mv {
+    display: inline-block;
+    width: 23px;
+    height: 17px;
+    margin-left: 10px;
+    background: url(../images/table.png) no-repeat 0 -151px;
+}
+
+.mic_table .tab_mv:hover {
+    background-position: -30px -151px;
+}
+
+
+/* 设置时长按钮 */
+
+.tab_but_box {
+    float: right;
+}
+
+
+/* 避免时长宽度溢出 */
+
+.mic_table .tab_time_box {
+    width: 111px;
+    position: relative;
+}
+
+.tab_time_box .tab_but_box1,
+.tab_time_box .tab_but_box2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+/* 默认but隐藏 */
+
+.tab_time_box .tab_but_box1 {
+    background-color: #f7f7f7;
+    display: none;
+}
+
+.tab_time_box .tab_but_box2 {
+    background-color: #fff;
+    display: none;
+}
+
+
+/* hover父元素时出现 */
+
+.mic_table tr:hover .tab_but_box1,
+.mic_table tr:hover .tab_but_box2 {
+    display: block;
+}
+
+.tab_but_box1 a,
+.tab_but_box2 a {
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+}
+
+.tab_add {
+    background: url(../images/icon.png) no-repeat 0 -700px;
+}
+
+.tab_add:hover {
+    background: url(../images/icon.png) no-repeat -22px -700px;
+}
+
+.tab_like {
+    background: url(../images/table.png) no-repeat 0 -174px;
+}
+
+.tab_like:hover {
+    background: url(../images/table.png) no-repeat -20px -174px;
+}
+
+.tab_share {
+    background: url(../images/table.png) no-repeat 0 -195px;
+}
+
+.tab_share:hover {
+    background: url(../images/table.png) no-repeat -20px -195px;
+}
+
+.tab_down {
+    background: url(../images/table.png) no-repeat -81px -174px;
+}
+
+.tab_down:hover {
+    background: url(../images/table.png) no-repeat -104px -174px;
+}
+
+/* 评论部分 */
+
+.pd_m_commt{
+    margin-top: 30px;
+}
+/* 评论标题 */
+.title_box{
+    padding-bottom: 6px;
+    border-bottom: 2px solid #c20c0c;
+}
+.commt_title{
+    font: 20px "微软雅黑";
+    color: #333;
+}
+.commt_title+span {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 9px;
+}
+.title_box span:last-child{color: #666;}
+/* 评论框 */
+
+.pd_commt {
+    margin-top: 20px;
+}
+.commt_box .touxiang img {
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+.commt_box .commt {
+    float: left;
+}
+
+.commt {
+    width: 578px;
+    position: relative
+}
+.commt_box{
+    margin-bottom: 20px;
+}
+/* 文本域编辑内容区 */
+.commt_txt {
+    display: block;
+    height: 50px;
+    width: 100%;
+    padding: 5px 6px 6px;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    line-height: 19px;
+    resize: none;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+.commt_txt:focus {
+    outline: none;
+}
+/* 文本域左三角 */
+.commt_txt_bg {
+    display: inline-block;
+    position: absolute;
+    width: 14px;
+    height: 20px;
+    background: url(../images/commt_bg.png);
+    top: 10px;
+}
+/* 评论框的表情 */
+.comm_icon{
+    width:578px;
+    padding-top: 10px;
+    padding-left: 60px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 18px;
+    vertical-align: middle;
+    height: 25px;
+}
+.comm_icon .icon a{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+.comm_icon .icon a:first-child{
+    background: url(../images/icon.png) no-repeat -40px -490px;
+    margin-right: 10px;
+}
+.comm_icon .icon a:nth-child(2){
+    background: url(../images/icon.png) no-repeat -60px -490px;
+}
+/* 评论按钮 */
+.comm_btn a{
+    display: inline-block;
+    width: 46px;
+    height: 25px;
+    background: url(../images/button.png) -84px -64px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+}
+.comm_btn a:hover{
+    background-position: -84px -94px;
+}
+/* 评论总数 */
+.comm_btn span{
+    color: #999;
+    margin-right: 10px;
+}
+/* 精彩评论 标题*/
+.dis_title{
+    color: #333;
+    border-bottom: 1px solid #cfcfcf;
+    padding-bottom: 2px;
+}
+
+/* 评论展示 */
+/* 第一条评论无上边框 */
+.commt_first{
+    padding:15px 0
+}
+/* 其余评论有上边框 */
+.commt_dis{
+    padding: 15px 0;
+    border-top: 1px dotted #ccc;
+}
+.commt_content{
+    margin-left: 10px;
+    width: 578px;;
+}
+.c_cont_box{
+    line-height: 20px;
+}
+/* 点赞精灵图 */
+.c_cont_bottom .commit_like{
+    display: inline-block;
+    width: 15px;
+    height: 14px;
+    background: url(../images/icon2.png) no-repeat -150px 0;
+    margin-right: 5px;
+}
+.c_cont_bottom .commit_like:hover{
+    background-position: -150px -20px;
+}
+.c_cont_bottom .action_a{
+    color: #666;
+}
+.action_a:hover{text-decoration: underline;}
+.action_a + .action_a::before{
+    content:"|";
+    padding-left:5px; 
+    padding-right: 8px;
+}
+.c_cont_bottom{
+    margin-top: 15px;
+}
+.commit_time{
+    color: #999;
+}
+.c_cont_box .uname{
+    color: #0c73c2;
+    margin-right: 5px;
+}
+.c_cont_box .uname:hover{
+    text-decoration: underline;
+}
+/* 用户名旁边音乐图标 */
+.icn_music{
+    display: inline-block;
+    width: 12px;
+    height: 13px;
+    background: url(../images/icon2.png) no-repeat -110px -190px;
+    vertical-align: -2px;
+}
+.user_mask{
+    width: 12px;
+    height: 12px;
+    vertical-align: -1px;
+}
+/* 最新评论 */
+.new_tit{
+    font-size: 12px;
+    height: 20px;
+    color: #333;
+    border-bottom: 1px solid #cfcfcf;
+    padding-bottom: 1px;
+}
+.user_cvip{
+    width: 26px;
+    height: 12px;
+    vertical-align: -1px;
+}
+/* 页码 */
+.page{
+    margin: 20px 107px;
+    list-style: none;
+}
+.page_item{
+    float: left;
+    height: 22px;
+    padding: 0 8px;
+    background-color: #fff;
+    line-height: 22px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    vertical-align: middle;
+    margin: 0 1px 0 2px; 
+}
+.page_item a{
+    color: #333;
+    text-decoration: none;
+}
+.page_item:hover{border:1px solid #333;}
+.page li:first-child,.page li:last-child{
+    background:url(../images/button.png) no-repeat -75px -560px;
+}
+
+/* 右侧边栏 */
+.right{
+    float: left;
+    padding: 20px 39px 40px 30px;
+}
+.right h4{
+    height: 23px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc
+}
+.right h4>a{
+    color: #666;
+    font-family: simsun,\5b8b\4f53;
+    font-style: normal;
+}
+.right h4>a:hover{text-decoration: underline;}
+.like_people{
+    width:200px;
+    padding-bottom: 25px;
+}
+.like_people li {
+    float: left;
+}
+.like_people img{
+    padding: 0 0 13px 13px;
+}
+.like_people li:first-child img,.like_people li:nth-child(5) img{
+    padding-left:0; 
+}
+/* 相关推荐 */
+.related_commed{
+    margin-bottom: 25px;
+}
+.commed_item{
+    width: 200px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.commed_item a:hover{
+    text-decoration: underline;
+}
+.commed_title{
+    height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    width:140px;
+}
+.commed_content p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.commed_title a{
+    display: inline-block;
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.commed_item div{
+    position: absolute;
+    top:0px;
+    left:60px;
+}
+.commed_content .user_name{
+    max-width: 106px;
+    margin: 0 2px 0 4px;
+    color: #333;
+}
+/* 网易云多端 */
+.more_down a{
+    color: #999;
+}
+
